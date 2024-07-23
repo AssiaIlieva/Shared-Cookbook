@@ -29,6 +29,7 @@ export default function Register() {
                     <span>Repeat Password</span>
                     <input className="input_text" id="rePassword" name="rePassword" type="password" />
                   </label>
+                  <input type="submit" className="button" value="register" />
                 </div>
               </form>
               <div className="clearing" />
