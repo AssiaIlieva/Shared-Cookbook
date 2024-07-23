@@ -1,6 +1,13 @@
 import { Link } from 'react-router-dom';
 
+import useForm from '../../hooks/useForm';
+
 export default function Login() {
+  const { values, onChange, onSubmit } = useForm({
+    email: '',
+    password: '',
+  });
+
   return (
     <div className="top-content">
       <div className="page-wrapper">
@@ -12,15 +19,15 @@ export default function Login() {
               </div>
               <div className="border" />
               <h2>Please, login</h2>
-              <form>
+              <form onSubmit={onSubmit}>
                 <div className="contact-form margin-top">
                   <label>
                     <span>Email</span>
-                    <input className="input_text" id="email" name="email" type="text" />
+                    <input className="input_text" id="email" name="email" type="text" onChange={onChange} value={values['email']} />
                   </label>
                   <label>
                     <span>Password</span>
-                    <input className="input_text" id="password" name="password" type="password" />
+                    <input className="input_text" id="password" name="password" type="password" onChange={onChange} value={values.password} />
                   </label>
                 </div>
               </form>
