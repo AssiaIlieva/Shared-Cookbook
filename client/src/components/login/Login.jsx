@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 
 import useForm from '../../hooks/useForm';
 
-export default function Login() {
-  const { values, onChange, onSubmit } = useForm({
+export default function Login({ loginSubmitHandler }) {
+  const { values, onChange, onSubmit } = useForm(loginSubmitHandler, {
     email: '',
     password: '',
   });
@@ -29,6 +29,7 @@ export default function Login() {
                     <span>Password</span>
                     <input className="input_text" id="password" name="password" type="password" onChange={onChange} value={values.password} />
                   </label>
+                  <input type="submit" className="button" value="login" />
                 </div>
               </form>
               <div className="clearing" />
