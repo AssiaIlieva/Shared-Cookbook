@@ -78,6 +78,9 @@ CSS TWEAKS
 .marginBottom {
   margin-bottom: 60px;
 }
+.marBottom30 {
+  margin-bottom: 30px;
+}
 .padTop {
   padding-top: 20px;
 }
@@ -210,15 +213,19 @@ PANEL CLASSES
 .panel-wrap {
   width: 100%;
   background: url(../images/pattern-2.jpg);
-  overflow: hidden;
-  margin-top: 20px;
+  padding: 20px; /* Добавяне на външен падинг */
+  box-sizing: border-box; /* Включва падинга в общата ширина */
 }
 .panel-wrapper {
-  width: 1560px;
-  margin: 0 auto;
-  overflow: hidden;
-  margin-top: 60px;
-  padding-bottom: 60px;
+  width: 100%; /* Разширяване на ширината на панела до 100% */
+  max-width: 1560px; /* Ограничаване на максималната ширина */
+  margin: 0 auto; /* Центриране на панела */
+  padding-bottom: 60px; /* Оставя място отдолу */
+  display: flex; /* Използване на Flexbox за подравняване на картите */
+  flex-wrap: wrap; /* Позволява на картите да се прехвърлят на нов ред при необходимост */
+  justify-content: center; /* Центрира картите по хоризонтала */
+  gap: 20px; /* Разстояние между картите */
+  box-sizing: border-box; /* Включва падинга в общата ширина */
 }
 
 .panel-wrapper .panel {
@@ -321,6 +328,7 @@ LAYOUT CLASSES
 .content p {
   padding-bottom: 10px;
 }
+
 /*------------- ------------------------------------
 PRIMARY CONTENT CLASSS
 -------------------------------------------------*/
