@@ -22,42 +22,42 @@ export default function Header() {
         <div className="menu">
           <ul>
             <li className="marRight20">
-              <NavLink to="/" activeClassName="active">
+              <NavLink to="/" activeclassname="active">
                 home
               </NavLink>
             </li>
             <li className="marRight20">
-              <NavLink to="/recipes" activeClassName="active">
+              <NavLink to="/recipes" activeclassname="active">
                 recipes
               </NavLink>
             </li>
             <li className="marRight20">
-              <NavLink to="/recipes/create" activeClassName="active">
+              <NavLink to="/recipes/create" activeclassname="active">
                 create recipe
               </NavLink>
             </li>
             <li className="marRight20">
-              <NavLink to="/tips" activeClassName="active">
+              <NavLink to="/tips" activeclassname="active">
                 tips
               </NavLink>
             </li>
             <li className="marRight20">
-              <NavLink to="/tips/create" activeClassName="active">
+              <NavLink to="/tips/create" activeclassname="active">
                 create tip
               </NavLink>
             </li>
             <li className="marRight20">
-              <NavLink to="/login" activeClassName="active">
+              <NavLink to="/login" activeclassname="active">
                 login
               </NavLink>
             </li>
             <li className="marRight20">
-              <NavLink to="/register" activeClassName="active">
+              <NavLink to="/register" activeclassname="active">
                 register
               </NavLink>
             </li>
             <li>
-              <NavLink to="/logout" activeClassName="active">
+              <NavLink to="/logout" activeclassname="active">
                 logout
               </NavLink>
             </li>

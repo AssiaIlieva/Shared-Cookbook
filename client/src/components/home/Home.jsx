@@ -3,12 +3,12 @@ export default function Home() {
     <div>
       <div className="panel-wrap">
         <div className="panel-wrapper">
-          <div className="panel marRight30">
+          <div className="panel marRight30 marBottom30">
             <div className="img">
-              <img src="images/img-1.jpg" />
+              <img src="https://m.1001recepti.com/images/photos/recipes/size_5/tiramisu-bez-iaica-s-krem-ot-maskarpone-techna-i-zakvasena-smetana-i-kakao-c8c7a13d81a58e48ddca5e008323af10-[104902].jpg" />
             </div>
             <div className="title">
-              <h1>Lorem ipsum</h1>
+              <h1>Tiramisu</h1>
             </div>
             <div className="border" />
             <div className="content">
@@ -18,7 +18,61 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="panel marRight30">
+          <div className="panel marRight30 marBottom30">
+            <div className="img">
+              <img src="https://noobcook.com/wp-content/uploads/2012/02/blackpeppersteak.jpg" />
+            </div>
+            <div className="title">
+              <h1 className="border-bottom">Pepper steak</h1>
+            </div>
+            <div className="border" />
+            <div className="content">
+              <p>
+                In bibendum eros eget dolor gravida sed venenatis nisl sollicitudin.
+                <br />
+              </p>
+              <div className="button-link">
+                <a href="#">readmore</a>
+              </div>
+            </div>
+          </div>
+          <div className="panel marRight30 marBottom30">
+            <div className="img">
+              <img src="https://www.seriouseats.com/thmb/M0V55hkUtqWV3zqKnhwOYKL1ELc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/easy-gazpacho-recipe-hero-1-7ad49d7b9488406b8c92d576dbe5b205.JPG" />
+            </div>
+            <div className="title">
+              <h1 className="border-bottom">Gazpacho</h1>
+            </div>
+            <div className="border" />
+            <div className="content">
+              <p>
+                In bibendum eros eget dolor gravida sed venenatis nisl sollicitudin.
+                <br />
+              </p>
+              <div className="button-link">
+                <a href="#">readmore</a>
+              </div>
+            </div>
+          </div>
+          <div className="panel marRight30 marBottom30">
+            <div className="img">
+              <img src="https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-square640-v2.jpg" />
+            </div>
+            <div className="title">
+              <h1 className="border-bottom">Spaghetti Carbonara</h1>
+            </div>
+            <div className="border" />
+            <div className="content">
+              <p>
+                In bibendum eros eget dolor gravida sed venenatis nisl sollicitudin.
+                <br />
+              </p>
+              <div className="button-link">
+                <a href="#">readmore</a>
+              </div>
+            </div>
+          </div>
+          <div className="panel marRight30 marBottom30">
             <div className="img">
               <img src="images/img-2.jpg" />
             </div>
@@ -36,61 +90,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="panel marRight30">
-            <div className="img">
-              <img src="images/img-2.jpg" />
-            </div>
-            <div className="title">
-              <h1 className="border-bottom">Nulla necleo</h1>
-            </div>
-            <div className="border" />
-            <div className="content">
-              <p>
-                In bibendum eros eget dolor gravida sed venenatis nisl sollicitudin.
-                <br />
-              </p>
-              <div className="button-link">
-                <a href="#">readmore</a>
-              </div>
-            </div>
-          </div>
-          <div className="panel marRight30">
-            <div className="img">
-              <img src="images/img-2.jpg" />
-            </div>
-            <div className="title">
-              <h1 className="border-bottom">Nulla necleo</h1>
-            </div>
-            <div className="border" />
-            <div className="content">
-              <p>
-                In bibendum eros eget dolor gravida sed venenatis nisl sollicitudin.
-                <br />
-              </p>
-              <div className="button-link">
-                <a href="#">readmore</a>
-              </div>
-            </div>
-          </div>
-          <div className="panel marRight30">
-            <div className="img">
-              <img src="images/img-2.jpg" />
-            </div>
-            <div className="title">
-              <h1 className="border-bottom">Nulla necleo</h1>
-            </div>
-            <div className="border" />
-            <div className="content">
-              <p>
-                In bibendum eros eget dolor gravida sed venenatis nisl sollicitudin.
-                <br />
-              </p>
-              <div className="button-link">
-                <a href="#">readmore</a>
-              </div>
-            </div>
-          </div>
-          <div className="panel marRight30">
+          <div className="panel marRight30 marBottom30">
             <div className="img">
               <img src="images/img-3.jpg" />
             </div>
