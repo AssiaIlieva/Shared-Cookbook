@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export default function Header() {
   return (
@@ -22,24 +22,34 @@ export default function Header() {
         <div className="menu">
           <ul>
             <li className="marRight20">
-              <Link className="active" to="/">
+              <NavLink to="/" activeClassName="active">
                 home
-              </Link>
+              </NavLink>
             </li>
             <li className="marRight20">
-              <Link to="about.html">about</Link>
+              <NavLink to="about.html" activeClassName="active">
+                about
+              </NavLink>
             </li>
             <li>
-              <Link to="services.html">services</Link>
+              <NavLink to="services.html" activeClassName="active">
+                services
+              </NavLink>
             </li>
             <li className="marRight20">
-              <Link to="features.html">features</Link>
+              <NavLink to="features.html" activeClassName="active">
+                features
+              </NavLink>
             </li>
             <li className="marRight20">
-              <Link to="/login">login</Link>
+              <NavLink to="/login" activeClassName="active">
+                login
+              </NavLink>
             </li>
             <li>
-              <Link to="/register">register</Link>
+              <NavLink to="/register" activeClassName="active">
+                register
+              </NavLink>
             </li>
           </ul>
         </div>
