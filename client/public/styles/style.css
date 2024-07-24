@@ -156,7 +156,7 @@ HEADER CLASSES
   padding-bottom: 30px;
 }
 .header-right-panel {
-  width: 400px;
+  width: 600px;
   float: right;
   overflow: hidden;
   margin-top: 30px;
@@ -174,7 +174,7 @@ HEADER CLASSES
 }
 
 .menu {
-  width: 400px;
+  width: 600px;
   float: left;
   margin-top: 40px;
 }

@@ -27,18 +27,23 @@ export default function Header() {
               </NavLink>
             </li>
             <li className="marRight20">
-              <NavLink to="about.html" activeClassName="active">
-                about
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to="services.html" activeClassName="active">
-                services
+              <NavLink to="/recipes" activeClassName="active">
+                recipes
               </NavLink>
             </li>
             <li className="marRight20">
-              <NavLink to="features.html" activeClassName="active">
-                features
+              <NavLink to="/recipes/create" activeClassName="active">
+                create recipe
+              </NavLink>
+            </li>
+            <li className="marRight20">
+              <NavLink to="/tips" activeClassName="active">
+                tips
+              </NavLink>
+            </li>
+            <li className="marRight20">
+              <NavLink to="/tips/create" activeClassName="active">
+                create tip
               </NavLink>
             </li>
             <li className="marRight20">
@@ -46,9 +51,14 @@ export default function Header() {
                 login
               </NavLink>
             </li>
-            <li>
+            <li className="marRight20">
               <NavLink to="/register" activeClassName="active">
                 register
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/logout" activeClassName="active">
+                logout
               </NavLink>
             </li>
           </ul>
