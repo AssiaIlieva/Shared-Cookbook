@@ -100,14 +100,14 @@ GENERAL CLASSES
 .panel {
   overflow: hidden;
 }
-.title {
-}
+/* .title {
+} */
 .content {
   overflow: hidden;
   font-size: 14px;
 }
-.button-link {
-}
+/* .button-link {
+} */
 .button-link a {
   font-family: 'Ropa Sans', sans-serif;
   text-transform: uppercase;
@@ -396,8 +396,8 @@ PRIMARY CONTENT CLASSS
   overflow: hidden;
   padding-top: 30px;
 }
-.primary-content .title {
-}
+/* .primary-content .title {
+} */
 .primary-content .mid-panel-content h2 {
   color: #cf9359;
   font-size: 22px;
@@ -618,16 +618,4 @@ CONTACT FORM CLASSS
 }
 .address .panel .content p a:hover {
   color: #282623;
-}
-
-.footer {
-  width: 960px;
-  margin: 0 auto;
-  margin-top: 76px;
-  overflow: hidden;
-}
-.footer p {
-  text-align: center;
-  color: #cf9359;
-  padding-bottom: 72px;
 }

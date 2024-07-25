@@ -6,6 +6,7 @@ import Home from './components/home/Home';
 import Register from './components/register/Register';
 import Login from './components/login/Login';
 import Recipes from './components/recipes/Recipes';
+import Footer from './components/footer/Footer';
 
 function App() {
   const [auth, setAuth] = useState({});
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<Login loginSubmitHandler={loginSubmitHandler} />} />
         <Route path="/recipes" element={<Recipes />} />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -1,6 +1,3 @@
-// src/components/RecipeCard.js
-import React from 'react';
-
 import styles from './RecipeCard.module.css';
 
 const RecipeCard = () => {
