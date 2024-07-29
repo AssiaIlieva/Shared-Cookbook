@@ -16,6 +16,7 @@ function App() {
     setAuthState(state);
   };
   const contextData = {
+    userId: authState._id,
     username: authState.username,
     email: authState.email,
     accessToken: authState.accessToken,
