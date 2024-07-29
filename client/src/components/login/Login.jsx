@@ -1,18 +1,21 @@
-import { Link } from 'react-router-dom';
-
+import { Link, useNavigate } from 'react-router-dom';
 import useForm from '../../hooks/useForm';
+import { useLogin } from '../../hooks/useAuth';
 
-const loginFormKeys = {
-  email: 'email',
-  password: 'password',
-};
+const initialValues = { email: '', password: '' };
 
-export default function Login({ loginSubmitHandler }) {
-  const { values, onChange, onSubmit } = useForm(loginSubmitHandler, {
-    [loginFormKeys.email]: '',
-    [loginFormKeys.password]: '',
-  });
-
+export default function Login() {
+  const login = useLogin();
+  const navigate = useNavigate();
+  const loginHandler = async ({ email, password }) => {
+    try {
+      await login(email, password);
+      navigate('/');
+    } catch (error) {
+      console.log(error.message);
+    }
+  };
+  const { values, changeHandler, submitHandler } = useForm(initialValues, loginHandler);
   return (
     <div className="top-content">
       <div className="page-wrapper">
@@ -24,29 +27,15 @@ export default function Login({ loginSubmitHandler }) {
               </div>
               <div className="border" />
               <h2>Please, login</h2>
-              <form onSubmit={onSubmit}>
+              <form onSubmit={submitHandler}>
                 <div className="contact-form margin-top">
                   <label>
                     <span>Email</span>
-                    <input
-                      className="input_text"
-                      id="email"
-                      name={loginFormKeys.email}
-                      type="text"
-                      onChange={onChange}
-                      value={values[loginFormKeys.email]}
-                    />
+                    <input className="input_text" id="email" name="email" value={values.email} onChange={changeHandler} type="text" />
                   </label>
                   <label>
                     <span>Password</span>
-                    <input
-                      className="input_text"
-                      id="password"
-                      name={loginFormKeys.password}
-                      type="password"
-                      onChange={onChange}
-                      value={values[loginFormKeys.password]}
-                    />
+                    <input className="input_text" id="password" name="password" value={values.password} onChange={changeHandler} type="password" />
                   </label>
                   <input type="submit" className="button" value="login" />
                 </div>
