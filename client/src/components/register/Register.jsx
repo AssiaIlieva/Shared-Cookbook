@@ -11,10 +11,10 @@ export default function Register() {
   const navigate = useNavigate();
 
   const registerHandler = async (values) => {
-    // if (values.password.length < 6) {
-    //   setError('Password must be at least 6 characters');
-    //   return;
-    // }
+    if (values.password.length < 6) {
+      setError('Password must be at least 6 characters');
+      return;
+    }
     if (values.password !== values.rePassword) {
       setError('Password Missmatch!');
       return;
@@ -76,7 +76,7 @@ export default function Register() {
                   {error && (
                     <label>
                       <span>Error Message</span>
-                      <p style={{ fontSize: '16px', color: 'red' }}>{error}</p>
+                      <p style={{ fontSize: '16px', color: 'red', lineHeight: '0px' }}>{error}</p>
                     </label>
                   )}
                   <input type="submit" className="button" value="register" />
