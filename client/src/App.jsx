@@ -9,18 +9,13 @@ import Recipes from './components/recipes/Recipes';
 import Footer from './components/footer/Footer';
 
 function App() {
-  const [auth, setAuth] = useState({});
-
-  const loginSubmitHandler = (values) => {
-    console.log(values);
-  };
   return (
     <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login loginSubmitHandler={loginSubmitHandler} />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/recipes" element={<Recipes />} />
       </Routes>
       <Footer />
