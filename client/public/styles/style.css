@@ -166,13 +166,15 @@ HEADER CLASSES
 }
 .header-right-panel-top {
   width: 280px;
-  float: right;
+  display: flex;
+  justify-content: left; /* Хоризонтално центриране */
+  align-items: center;
 }
 .header-right-panel p {
   color: #cf9359;
   float: right;
-  font-size: 14px;
-  text-align: right;
+  font-size: 20px;
+  text-align: left;
   font-weight: normal;
 }
 
