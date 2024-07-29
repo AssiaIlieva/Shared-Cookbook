@@ -7,19 +7,34 @@ import Register from './components/register/Register';
 import Login from './components/login/Login';
 import Recipes from './components/recipes/Recipes';
 import Footer from './components/footer/Footer';
+import { AuthContext } from './contexts/AuthContext';
 
 function App() {
+  const [authState, setAuthState] = useState({});
+
+  const changeAuthState = (state) => {
+    setAuthState(state);
+  };
+  const contextData = {
+    username: authState.username,
+    email: authState.email,
+    accessToken: authState.accessToken,
+    isAuthenticated: !!authState.email,
+    changeAuthState,
+  };
   return (
-    <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/recipes" element={<Recipes />} />
-      </Routes>
-      <Footer />
-    </>
+    <AuthContext.Provider value={contextData}>
+      <>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/recipes" element={<Recipes />} />
+        </Routes>
+        <Footer />
+      </>
+    </AuthContext.Provider>
   );
 }
 
