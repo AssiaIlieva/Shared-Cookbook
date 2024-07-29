@@ -1,24 +1,26 @@
 import { useState } from 'react';
 
-export default function useForm(submitHandler, initialValues) {
+export default function useForm(initialValues, submitCallback) {
   const [values, setValues] = useState(initialValues);
 
-  const onChange = (e) => {
+  // TODO: add support for checkbox
+
+  const changeHandler = (e) => {
     setValues((state) => ({
       ...state,
       [e.target.name]: e.target.value,
     }));
   };
 
-  const onSubmit = (e) => {
+  const submitHandler = (e) => {
     e.preventDefault();
 
-    submitHandler(values);
+    submitCallback(values);
   };
 
   return {
     values,
-    onChange,
-    onSubmit,
+    changeHandler,
+    submitHandler,
   };
 }
