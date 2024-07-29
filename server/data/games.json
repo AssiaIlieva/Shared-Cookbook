@@ -1,0 +1,26 @@
+{
+  "25174b99-67c1-4607-9725-405151605f8b": {
+    "title": "Homescapes",
+    "category": "Arcade",
+    "maxLevel": "4",
+    "imageUrl": "https://marketing-interactive-assets.b-cdn.net/images/sg/content-images/gardenscapes_homescapes.jpg",
+    "summary": "Homescapes follows the adventure of the main character Austin who returns to his childhood mansion and begins to restore it.",
+    "_id": "25174b99-67c1-4607-9725-405151605f8b"
+  },
+  "1944f784-faaa-470c-9376-fe2c6c08154f": {
+    "title": "Township",
+    "category": "Arcade",
+    "maxLevel": "3",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/f7/Township_App_Icon.jpg",
+    "summary": "The gameplay is built upon farming and production puzzle cores, and casual order board games.",
+    "_id": "1944f784-faaa-470c-9376-fe2c6c08154f"
+  },
+  "b4b87398-bebf-4618-8dcf-d0d7353dbaa4": {
+    "title": "Super Mario",
+    "category": "Arcade",
+    "maxLevel": "5",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a9/MarioNSMBUDeluxe.png",
+    "summary": "Mario is depicted as a portly plumber who lives in the fictional land of the Mushroom Kingdom with Luigi, his younger, taller brother.",
+    "_id": "b4b87398-bebf-4618-8dcf-d0d7353dbaa4"
+  }
+}
