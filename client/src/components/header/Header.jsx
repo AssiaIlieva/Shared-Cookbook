@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { AuthContext } from '../../contexts/AuthContext';
 
@@ -38,7 +38,7 @@ export default function Header() {
           {isAuthenticated ? (
             <ul>
               <li className="marRight20">
-                <NavLink to="/recipes/create" activeclassname="active">
+                <NavLink to="/recipe/create" activeclassname="active">
                   create recipe
                 </NavLink>
               </li>
