@@ -8,6 +8,7 @@ import Login from './components/login/Login';
 import Recipes from './components/recipes/Recipes';
 import Footer from './components/footer/Footer';
 import { AuthContext } from './contexts/AuthContext';
+import RecipeCreate from './components/recipeCreate/RecipeCreate';
 
 function App() {
   const [authState, setAuthState] = useState({});
@@ -32,6 +33,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
           <Route path="/recipes" element={<Recipes />} />
+          <Route path="/recipe/create" element={<RecipeCreate />} />
         </Routes>
         <Footer />
       </>
