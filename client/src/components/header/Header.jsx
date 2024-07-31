@@ -1,10 +1,9 @@
-import { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import { AuthContext } from '../../contexts/AuthContext';
+import { useAuthContext } from '../../contexts/AuthContext';
 
 export default function Header() {
-  const { username, isAuthenticated } = useContext(AuthContext);
+  const { username, isAuthenticated } = useAuthContext();
   return (
     <div className="header">
       <div className="header-left-panel">
