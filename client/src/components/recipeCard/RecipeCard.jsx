@@ -1,26 +1,27 @@
+import { Link } from 'react-router-dom';
+
 import styles from './RecipeCard.module.css';
 
-const RecipeCard = () => {
+export default function RecipeCard({ _id, recipeName, recipeType, imageURL, description }) {
   return (
     <div className={styles.cardWrapper}>
       <div className={styles.card}>
-        <img src="https://noobcook.com/wp-content/uploads/2012/02/blackpeppersteak.jpg" alt="PepperSteak" className={styles.image} />
+        <img src={imageURL} alt={recipeName} className={styles.image} />
       </div>
       <div className="title">
-        <h1 className="border-bottom">Pepper steak</h1>
+        <h1 className="border-bottom">{recipeName}</h1>
+        <h5>{recipeType}</h5>
       </div>
       <div className="border" />
       <div className="content">
         <p>
-          In bibendum eros eget dolor gravida sed venenatis nisl sollicitudin.
+          {description}
           <br />
         </p>
         <div className="button-link">
-          <a href="#">readmore</a>
+          <Link to={`/recipes/${_id}/details`}>readmore</Link>
         </div>
       </div>
     </div>
   );
-};
-
-export default RecipeCard;
+}
