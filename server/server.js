@@ -1308,11 +1308,9 @@
   var protectedData = {
     users: {
       '78d8bbbb-31fa-4208-bfd2-5360a62c0d02': {
-        username: 'Assia Ilieva',
         email: 'assia@abv.bg',
-        password: '123456',
-        _createdOn: 1722358106109,
-        _id: '78d8bbbb-31fa-4208-bfd2-5360a62c0d02',
+        username: 'Assia Ilieva',
+        hashedPassword: '83313014ed3e2391aa1332615d2f053cf5c1bfe05ca1cbcb5582443822df6eb1',
       },
       '35c62d76-8152-4626-8712-eeb96381bea8': {
         email: 'peter@abv.bg',
@@ -1334,10 +1332,71 @@
   };
   var seedData = {
     recipes: {
+      'b9530fed-3654-438e-b5f9-19fe04aed8f8': {
+        _ownerId: '78d8bbbb-31fa-4208-bfd2-5360a62c0d02',
+        recipeName: 'Crème Brûlée',
+        recipeType: 'Dessert',
+        preparationTime: '01:00',
+        imageURL: 'https://brunchandbatter.com/wp-content/uploads/2022/06/Yogurt-Brulee-FI.jpg',
+        description:
+          'Crème brûlée is a classic French dessert consisting of a rich, creamy custard base topped with a crisp layer of caramelized sugar. It’s typically flavored with vanilla and served chilled, with the sugar topping being caramelized just before serving to create a delightful contrast in texture',
+        ingredients:
+          '500ml heavy cream\n1 vanilla bean or 1 tablespoon vanilla extract\n5 large egg yolks\n100g granulated sugar\n2 tablespoons brown sugar (for caramelizing)',
+        instructions:
+          'Preheat your oven to 160°C (325°F).\nHeat the heavy cream and vanilla bean (split and scraped) in a saucepan until just simmering. Remove from heat and let it infuse for 10 minutes. If using vanilla extract, add it after heating.\nWhisk the egg yolks and granulated sugar together until pale and slightly thickened.\nSlowly pour the hot cream into the egg yolk mixture, whisking constantly to avoid curdling.\nStrain the mixture through a fine-mesh sieve into a clean bowl or pitcher.\nDivide the custard mixture among ramekins and place them in a baking dish. Pour hot water into the dish halfway up the sides of the ramekins to create a water bath.\nBake for 30-40 minutes, or until the custards are set but still slightly wobbly in the center. Remove from the oven and let cool to room temperature. Refrigerate for at least 2 hours or overnight.\nBefore serving, sprinkle a thin layer of brown sugar on top of each custard. Use a kitchen torch to caramelize the sugar until it forms a crispy, golden-brown crust.\nServe immediately.',
+        _createdOn: 1722373410922,
+        _id: 'b9530fed-3654-438e-b5f9-19fe04aed8f8',
+      },
+      '2909a3a8-eb62-41c9-9209-6ca058fa2b61': {
+        _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
+        recipeName: 'Zucchini Fritters',
+        recipeType: 'Appetizer',
+        preparationTime: '01:00',
+        imageURL: 'https://www.savorynothings.com/wp-content/uploads/2019/07/zucchini-fritters-image-sq-500x375.jpg',
+        description:
+          'Zucchini fritters are crispy, golden-brown patties made from grated zucchini mixed with flour, eggs, cheese, and herbs. They are pan-fried until crunchy on the outside and tender on the inside and often served with a cooling dip like yogurt or sour cream',
+        ingredients:
+          '2 medium zucchinis, grated  \n1/2 cup all-purpose flour  \n1 large egg  \n1/2 cup grated cheese (such as Parmesan or cheddar)  \n2 tablespoons chopped fresh herbs (such as parsley or dill)  \n2 cloves garlic, minced  \nSalt to taste  \nFreshly ground black pepper to taste  \n2 tablespoons olive oil (for frying)',
+        instructions:
+          'To prepare zucchini fritters:\nGrate the zucchinis and place them in a colander. Sprinkle with a little salt and let them sit for about 10 minutes to draw out excess moisture. Squeeze out as much liquid as possible using a clean kitchen towel or paper towels.\nIn a bowl, combine the grated zucchini, flour, egg, grated cheese, chopped herbs, minced garlic, salt, and pepper. Mix well until everything is evenly combined.\nHeat olive oil in a skillet over medium heat. Scoop spoonfuls of the zucchini mixture into the skillet and flatten them slightly to form patties.\nCook the fritters for about 3-4 minutes on each side, or until they are golden brown and crispy.\nRemove from the skillet and drain on paper towels. Serve warm with a side of yogurt or sour cream if desired.',
+        _createdOn: 1722374259449,
+        _id: '2909a3a8-eb62-41c9-9209-6ca058fa2b61',
+      },
+      '882ed39e-580b-49e9-b2a3-bdf1e8b521ae': {
+        _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
+        recipeName: 'Apple Pie',
+        recipeType: 'Dessert',
+        preparationTime: '02:30',
+        imageURL: 'https://jessicainthekitchen.com/wp-content/uploads/2021/09/Vegan-Apple-Pie-14-500x375.jpg',
+        description:
+          "Apple pie is a classic dessert featuring a buttery, flaky crust filled with tender, spiced apples. It's typically baked until the crust is golden and the filling is bubbling, creating a warm and comforting treat often enjoyed with a scoop of vanilla ice cream.",
+        ingredients:
+          '2 1/2 cups all-purpose flour\n1 cup unsalted butter (cold and cubed)\n1/4 cup granulated sugar\n1/4 teaspoon salt\n6-7 medium apples (such as Granny Smith or Honeycrisp), peeled, cored, and sliced\n3/4 cup granulated sugar\n1/4 cup brown sugar\n1 tablespoon lemon juice\n1 teaspoon ground cinnamon\n1/4 teaspoon ground nutmeg\n1/4 teaspoon ground allspice\n1 tablespoon all-purpose flour or cornstarch (for thickening)\n1 egg (for egg wash, optional)\n1 tablespoon milk (for egg wash, optional)',
+        instructions:
+          'To prepare apple pie, first make the dough by cutting cold butter into flour, sugar, and salt until crumbly, then add water to form a dough. Chill the dough, then roll out and fit into a pie dish. Mix sliced apples with sugar, brown sugar, lemon juice, spices, and flour or cornstarch, then pour into the pie crust. Cover with a top crust or lattice, seal edges, and brush with egg wash if desired. Bake at 220°C (425°F) for 45-50 minutes, until the crust is golden and the filling is bubbly. Let cool before serving',
+        _createdOn: 1722373747011,
+        _id: '882ed39e-580b-49e9-b2a3-bdf1e8b521ae',
+      },
+      '7c301f53-f215-449c-8c59-6914a942fc16': {
+        _ownerId: '78d8bbbb-31fa-4208-bfd2-5360a62c0d02',
+        recipeName: 'Mushroom Risotto',
+        recipeType: 'Appetizer',
+        preparationTime: '01:00',
+        imageURL:
+          'https://www.allrecipes.com/thmb/9d8yV77PRL3wbRwcpAIxtZPdi5Q=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/85389-gourmet-mushroom-risotto-DDMFS-4x3-a8a80a8deb064c6a8f15452b808a0258.jpg',
+        description:
+          "Mushroom risotto is a creamy Italian dish made with Arborio rice cooked slowly in a flavorful broth, combined with sautéed porcini mushrooms, onions, and garlic. It's finished with Parmesan cheese and butter for a rich, comforting meal",
+        ingredients:
+          '300g Arborio rice  \n200g fresh or dried porcini mushrooms  \n1 small onion, finely chopped  \n2 cloves garlic, minced  \n100ml white wine  \n1 liter chicken or vegetable broth  \n50g grated Parmesan cheese  \n2 tablespoons olive oil  \n2 tablespoons butter  \nSalt to taste  \nFreshly ground black pepper to taste  \nFresh parsley, chopped (optional, for garnish)',
+        instructions:
+          'Sauté onions and garlic in olive oil and butter, then add Arborio rice and cook for a few minutes. Deglaze with white wine, then gradually add warm broth, stirring frequently. Incorporate sautéed porcini mushrooms and cook until the rice is creamy and tender. Finish with Parmesan cheese, season with salt and pepper, and garnish with fresh parsley if desired.',
+        _createdOn: 1722373152588,
+        _id: '7c301f53-f215-449c-8c59-6914a942fc16',
+      },
       'd81e4069-7d31-4743-b59b-0d21bc5059b7': {
         _ownerId: '847ec027-f659-4086-8032-5173e2f9c93a',
         recipeName: 'Meat Balls in Tomato Sauce',
-        recipeType: 'mainCourse',
+        recipeType: 'Main Course',
         preparationTime: '01:00',
         imageURL:
           'https://www.allrecipes.com/thmb/bA6K66Wfj2oyXQtnZob8FP-UFU8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/220854-chef-johns-italian-meatballs-DDMFS-beauty-4x3-BG-31732-f527165240e34fb081a5290e47d580d0.jpg',
@@ -1351,7 +1410,9 @@
         _id: 'd81e4069-7d31-4743-b59b-0d21bc5059b7',
       },
       '8f46934e-d35f-438e-bf0e-91596c16035b': {
-        recipeType: 'mainCourse',
+        _ownerId: '78d8bbbb-31fa-4208-bfd2-5360a62c0d02',
+        recipeName: 'Spaghetty Carbonara',
+        recipeType: 'Main Course',
         preparationTime: '00:45',
         imageURL: 'https://anitalianinmykitchen.com/wp-content/uploads/2021/03/carbonara-photo-.jpg',
         description:
@@ -1366,7 +1427,7 @@
       '5948c5e7-02a8-455f-aeae-2ade057ed4b8': {
         _ownerId: '847ec027-f659-4086-8032-5173e2f9c93a',
         recipeName: 'Bruschetta',
-        recipeType: 'appetizer',
+        recipeType: 'Appetizer',
         preparationTime: '00:30',
         imageURL: 'https://www.howtocook.recipes/wp-content/uploads/2021/09/Bruschetta-recipe-500x500.jpg',
         description:
@@ -1381,7 +1442,7 @@
       'c2fb0f02-8c03-435d-9709-b121b09bd286': {
         _ownerId: '78d8bbbb-31fa-4208-bfd2-5360a62c0d02',
         recipeName: 'Pepper Steak',
-        recipeType: 'mainCourse',
+        recipeType: 'Main Course',
         preparationTime: '00:45',
         imageURL: 'https://noobcook.com/wp-content/uploads/2012/02/blackpeppersteak.jpg',
         description:
@@ -1396,7 +1457,7 @@
       '59c16686-08b2-4b45-8a8a-0ccf702e1056': {
         _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
         recipeName: 'Tiramisu',
-        recipeType: 'dessert',
+        recipeType: 'Dessert',
         preparationTime: '00:30',
         imageURL: 'https://bakewithzoha.com/wp-content/uploads/2023/12/hot-chocolate-tiramisu-featured.jpg',
         description:
