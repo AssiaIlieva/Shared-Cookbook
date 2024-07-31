@@ -51,10 +51,10 @@ export default function RecipeCreate() {
                       <option value="" disabled>
                         Please, choose the recipe type
                       </option>
-                      <option value="soup">Soup</option>
-                      <option value="appetizer">Appetizer</option>
-                      <option value="mainCourse">Main Course</option>
-                      <option value="dessert">Dessert</option>
+                      <option value="Soup">Soup</option>
+                      <option value="Appetizer">Appetizer</option>
+                      <option value="Main Course">Main Course</option>
+                      <option value="Dessert">Dessert</option>
                     </select>
                   </label>
                   <label>
