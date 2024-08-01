@@ -10,6 +10,7 @@ import Logout from './components/logout/Logout';
 import Recipes from './components/recipes/Recipes';
 import Footer from './components/footer/Footer';
 import RecipeCreate from './components/recipeCreate/RecipeCreate';
+import RecipeDetails from './components/recipeDetails/RecipeDetails';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/logout" element={<Logout />} />
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/recipe/create" element={<RecipeCreate />} />
+          <Route path="/recipes/:recipeId/details" element={<RecipeDetails />} />
         </Routes>
         <Footer />
       </>
