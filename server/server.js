@@ -1341,9 +1341,9 @@
         description:
           'Crème brûlée is a classic French dessert consisting of a rich, creamy custard base topped with a crisp layer of caramelized sugar. It’s typically flavored with vanilla and served chilled, with the sugar topping being caramelized just before serving to create a delightful contrast in texture',
         ingredients:
-          '500ml heavy cream\n1 vanilla bean or 1 tablespoon vanilla extract\n5 large egg yolks\n100g granulated sugar\n2 tablespoons brown sugar (for caramelizing)',
+          '500ml heavy cream, 1 vanilla bean or 1 tablespoon vanilla extract, 5 large egg yolks, 100g granulated sugar, 2 tablespoons brown sugar (for caramelizing)',
         instructions:
-          'Preheat your oven to 160°C (325°F).\nHeat the heavy cream and vanilla bean (split and scraped) in a saucepan until just simmering. Remove from heat and let it infuse for 10 minutes. If using vanilla extract, add it after heating.\nWhisk the egg yolks and granulated sugar together until pale and slightly thickened.\nSlowly pour the hot cream into the egg yolk mixture, whisking constantly to avoid curdling.\nStrain the mixture through a fine-mesh sieve into a clean bowl or pitcher.\nDivide the custard mixture among ramekins and place them in a baking dish. Pour hot water into the dish halfway up the sides of the ramekins to create a water bath.\nBake for 30-40 minutes, or until the custards are set but still slightly wobbly in the center. Remove from the oven and let cool to room temperature. Refrigerate for at least 2 hours or overnight.\nBefore serving, sprinkle a thin layer of brown sugar on top of each custard. Use a kitchen torch to caramelize the sugar until it forms a crispy, golden-brown crust.\nServe immediately.',
+          'Preheat your oven to 160°C (325°F). Heat the heavy cream and vanilla bean (split and scraped) in a saucepan until just simmering. Remove from heat and let it infuse for 10 minutes. If using vanilla extract, add it after heating.\nWhisk the egg yolks and granulated sugar together until pale and slightly thickened. Slowly pour the hot cream into the egg yolk mixture, whisking constantly to avoid curdling. Strain the mixture through a fine-mesh sieve into a clean bowl or pitcher. Divide the custard mixture among ramekins and place them in a baking dish. Pour hot water into the dish halfway up the sides of the ramekins to create a water bath. Bake for 30-40 minutes, or until the custards are set but still slightly wobbly in the center. Remove from the oven and let cool to room temperature. Refrigerate for at least 2 hours or overnight. Before serving, sprinkle a thin layer of brown sugar on top of each custard. Use a kitchen torch to caramelize the sugar until it forms a crispy, golden-brown crust. Serve immediately.',
         _createdOn: 1722373410922,
         _id: 'b9530fed-3654-438e-b5f9-19fe04aed8f8',
       },
@@ -1356,9 +1356,9 @@
         description:
           'Zucchini fritters are crispy, golden-brown patties made from grated zucchini mixed with flour, eggs, cheese, and herbs. They are pan-fried until crunchy on the outside and tender on the inside and often served with a cooling dip like yogurt or sour cream',
         ingredients:
-          '2 medium zucchinis, grated  \n1/2 cup all-purpose flour  \n1 large egg  \n1/2 cup grated cheese (such as Parmesan or cheddar)  \n2 tablespoons chopped fresh herbs (such as parsley or dill)  \n2 cloves garlic, minced  \nSalt to taste  \nFreshly ground black pepper to taste  \n2 tablespoons olive oil (for frying)',
+          '2 medium zucchinis grated, 1/2 cup all-purpose flour, 1 large egg, 1/2 cup grated cheese (such as Parmesan or cheddar), 2 tablespoons chopped fresh herbs (such as parsley or dill), 2 cloves garlic  minced, Salt to taste, freshly ground black pepper to taste, 2 tablespoons olive oil (for frying)',
         instructions:
-          'To prepare zucchini fritters:\nGrate the zucchinis and place them in a colander. Sprinkle with a little salt and let them sit for about 10 minutes to draw out excess moisture. Squeeze out as much liquid as possible using a clean kitchen towel or paper towels.\nIn a bowl, combine the grated zucchini, flour, egg, grated cheese, chopped herbs, minced garlic, salt, and pepper. Mix well until everything is evenly combined.\nHeat olive oil in a skillet over medium heat. Scoop spoonfuls of the zucchini mixture into the skillet and flatten them slightly to form patties.\nCook the fritters for about 3-4 minutes on each side, or until they are golden brown and crispy.\nRemove from the skillet and drain on paper towels. Serve warm with a side of yogurt or sour cream if desired.',
+          'Grate the zucchinis and place them in a colander. Sprinkle with a little salt and let them sit for about 10 minutes to draw out excess moisture. Squeeze out as much liquid as possible using a clean kitchen towel or paper towels. In a bowl, combine the grated zucchini, flour, egg, grated cheese, chopped herbs, minced garlic, salt, and pepper. Mix well until everything is evenly combined. Heat olive oil in a skillet over medium heat. Scoop spoonfuls of the zucchini mixture into the skillet and flatten them slightly to form patties. Cook the fritters for about 3-4 minutes on each side, or until they are golden brown and crispy. Remove from the skillet and drain on paper towels. Serve warm with a side of yogurt or sour cream if desired.',
         _createdOn: 1722374259449,
         _id: '2909a3a8-eb62-41c9-9209-6ca058fa2b61',
       },
@@ -1371,7 +1371,7 @@
         description:
           "Apple pie is a classic dessert featuring a buttery, flaky crust filled with tender, spiced apples. It's typically baked until the crust is golden and the filling is bubbling, creating a warm and comforting treat often enjoyed with a scoop of vanilla ice cream.",
         ingredients:
-          '2 1/2 cups all-purpose flour\n1 cup unsalted butter (cold and cubed)\n1/4 cup granulated sugar\n1/4 teaspoon salt\n6-7 medium apples (such as Granny Smith or Honeycrisp), peeled, cored, and sliced\n3/4 cup granulated sugar\n1/4 cup brown sugar\n1 tablespoon lemon juice\n1 teaspoon ground cinnamon\n1/4 teaspoon ground nutmeg\n1/4 teaspoon ground allspice\n1 tablespoon all-purpose flour or cornstarch (for thickening)\n1 egg (for egg wash, optional)\n1 tablespoon milk (for egg wash, optional)',
+          '2 1/2 cups all-purpose flour, 1 cup unsalted butter (cold and cubed), 1/4 cup granulated sugar, 1/4 teaspoon salt, 6-7 medium apples (such as Granny Smith or Honeycrisp), peeled, cored, and sliced, 3/4 cup granulated sugar, 1/4 cup brown sugar, 1 tablespoon lemon juice, 1 teaspoon ground cinnamon, 1/4 teaspoon ground nutmeg, 1/4 teaspoon ground allspice, 1 tablespoon all-purpose flour or cornstarch (for thickening), 1 egg (for egg wash, optional), 1 tablespoon milk (for egg wash, optional)',
         instructions:
           'To prepare apple pie, first make the dough by cutting cold butter into flour, sugar, and salt until crumbly, then add water to form a dough. Chill the dough, then roll out and fit into a pie dish. Mix sliced apples with sugar, brown sugar, lemon juice, spices, and flour or cornstarch, then pour into the pie crust. Cover with a top crust or lattice, seal edges, and brush with egg wash if desired. Bake at 220°C (425°F) for 45-50 minutes, until the crust is golden and the filling is bubbly. Let cool before serving',
         _createdOn: 1722373747011,
@@ -1387,7 +1387,7 @@
         description:
           "Mushroom risotto is a creamy Italian dish made with Arborio rice cooked slowly in a flavorful broth, combined with sautéed porcini mushrooms, onions, and garlic. It's finished with Parmesan cheese and butter for a rich, comforting meal",
         ingredients:
-          '300g Arborio rice  \n200g fresh or dried porcini mushrooms  \n1 small onion, finely chopped  \n2 cloves garlic, minced  \n100ml white wine  \n1 liter chicken or vegetable broth  \n50g grated Parmesan cheese  \n2 tablespoons olive oil  \n2 tablespoons butter  \nSalt to taste  \nFreshly ground black pepper to taste  \nFresh parsley, chopped (optional, for garnish)',
+          '300g Arborio rice, 200g fresh or dried porcini mushrooms, 1 small onion, finely chopped, 2 cloves garlic, minced, 100ml white wine, 1 liter chicken or vegetable broth, 50g grated Parmesan cheese, 2 tablespoons olive oil, 2 tablespoons butter, salt to taste, freshly ground black pepper to taste, fresh parsley, chopped (optional, for garnish)',
         instructions:
           'Sauté onions and garlic in olive oil and butter, then add Arborio rice and cook for a few minutes. Deglaze with white wine, then gradually add warm broth, stirring frequently. Incorporate sautéed porcini mushrooms and cook until the rice is creamy and tender. Finish with Parmesan cheese, season with salt and pepper, and garnish with fresh parsley if desired.',
         _createdOn: 1722373152588,
@@ -1403,9 +1403,9 @@
         description:
           "Meatballs in tomato sauce is a comforting dish featuring tender, seasoned ground beef meatballs simmered in a rich, flavorful tomato sauce with herbs. It's typically served with pasta, rice, or crusty bread.",
         ingredients:
-          '500g ground beef  \n1 small onion, finely chopped  \n2 cloves garlic, minced  \n1 egg  \n50g breadcrumbs  \n2 tablespoons chopped fresh parsley  \nSalt to taste  \nBlack pepper to taste  \n500ml canned crushed tomatoes  \n1 tablespoon tomato paste  \n1 teaspoon dried oregano  \n1 teaspoon dried basil  \n2 tablespoons olive oil',
+          '500g ground beef, 1 small onion, finely chopped, 2 cloves garlic minced, 1 egg, 50g breadcrumbs, 2 tablespoons chopped fresh parsley, salt to taste, black pepper to taste, 500ml canned crushed tomatoes, 1 tablespoon tomato paste, 1 teaspoon dried oregano, 1 teaspoon dried basil, 2 tablespoons olive oil',
         instructions:
-          'Preheat your oven to 200°C (400°F).\nCombine ground beef, chopped onion, minced garlic, egg, breadcrumbs, parsley, salt, and pepper in a bowl. Mix well and form into meatballs.\nPlace the meatballs on a baking sheet and bake for about 20 minutes, or until cooked through.\nIn a pan, heat olive oil over medium heat. Add tomato paste and cook for 1-2 minutes. Add crushed tomatoes, oregano, and basil. Simmer for 10 minutes.\nAdd the baked meatballs to the tomato sauce and simmer for 10 minutes to let the flavors meld.\nServe the meatballs and sauce over pasta, rice, or with bread.',
+          'Preheat your oven to 200°C (400°F). Combine ground beef, chopped onion, minced garlic, egg, breadcrumbs, parsley, salt, and pepper in a bowl. Mix well and form into meatballs. Place the meatballs on a baking sheet and bake for about 20 minutes, or until cooked through. In a pan, heat olive oil over medium heat. Add tomato paste and cook for 1-2 minutes. Add crushed tomatoes, oregano, and basil. Simmer for 10 minutes. Add the baked meatballs to the tomato sauce and simmer for 10 minutes to let the flavors meld. Serve the meatballs and sauce over pasta, rice, or with bread.',
         _createdOn: 1722363576603,
         _id: 'd81e4069-7d31-4743-b59b-0d21bc5059b7',
       },
@@ -1418,7 +1418,7 @@
         description:
           'Spaghetti carbonara is a classic Italian pasta dish with a creamy sauce of eggs, cheese, pancetta or bacon, and black pepper. The rich sauce coats the pasta, creating a flavorful and satisfying meal',
         ingredients:
-          '4 servings spaghetti  \n150g pancetta or bacon, diced  \n2 large eggs  \n50g grated Parmesan cheese  \n2 cloves garlic, minced  \n2 tablespoons olive oil  \nSalt to taste  \nFreshly ground black pepper to taste',
+          '4 servings spaghetti, 150g pancetta or bacon - diced, 2 large eggs, 50g grated Parmesan cheese, 2 cloves garlic, minced, 2 tablespoons olive oil, salt to taste, freshly ground black pepper to taste',
         instructions:
           'Cook the spaghetti according to package instructions. Sauté the pancetta or bacon with garlic in olive oil until crispy. In a bowl, whisk eggs and Parmesan cheese together. Toss the hot spaghetti with the pancetta, then mix in the egg mixture off the heat to create a creamy sauce. Season with salt and pepper.',
         _createdOn: 1722362834291,
@@ -1433,9 +1433,9 @@
         description:
           "A classic Italian appetizer featuring toasted bread topped with a mixture of diced tomatoes, garlic, basil, olive oil, and balsamic vinegar. It's fresh, flavorful, and easy to prepare.",
         ingredients:
-          '1 loaf of Italian bread or baguette, sliced  \n4 ripe tomatoes, diced  \n2 cloves garlic, minced  \n2 tablespoons fresh basil, chopped  \n3 tablespoons olive oil  \n1 tablespoon balsamic vinegar  \nSalt to taste  \nFreshly ground black pepper to taste',
+          '1 loaf of Italian bread or baguette - sliced, 4 ripe tomatoes - diced, 2 cloves garlic - minced, 2 tablespoons fresh basil - chopped, 3 tablespoons olive oil, 1 tablespoon balsamic vinegar, salt to taste, freshly ground black pepper to taste',
         instructions:
-          'Preheat your oven to 200°C (400°F).\nArrange the bread slices on a baking sheet and toast them in the oven for about 5-7 minutes or until golden and crispy.\nIn a bowl, combine the diced tomatoes, minced garlic, chopped basil, olive oil, balsamic vinegar, salt, and black pepper.\nSpoon the tomato mixture onto the toasted bread slices.\nServe immediately.',
+          'Preheat your oven to 200°C (400°F). Arrange the bread slices on a baking sheet and toast them in the oven for about 5-7 minutes or until golden and crispy. In a bowl, combine the diced tomatoes, minced garlic, chopped basil, olive oil, balsamic vinegar, salt, and black pepper. Spoon the tomato mixture onto the toasted bread slices. Serve immediately.',
         _createdOn: 1722364429383,
         _id: '5948c5e7-02a8-455f-aeae-2ade057ed4b8',
       },
@@ -1448,7 +1448,7 @@
         description:
           'Pepper steak is a flavorful dish featuring beef steaks seasoned with a mix of crushed black, green, and white peppercorns, then seared to perfection. The steaks are served with a rich sauce made from sautéed onions, garlic, white wine, beef broth, and cream',
         ingredients:
-          '4 beef steaks (about 600g)\n1 tablespoon black peppercorns, crushed\n1 tablespoon green peppercorns, crushed\n1 tablespoon white peppercorns, crushed\n2 tablespoons butter\n1 tablespoon olive oil\n1 small onion, finely chopped\n2 cloves garlic, finely chopped\n100ml white wine\n200ml beef broth\n100ml heavy cream\nSalt to taste',
+          '4 beef steaks (about 600g), 1 tablespoon black peppercorns - crushed, 1 tablespoon green peppercorns - crushed, 1 tablespoon white peppercorns - crushed, 2 tablespoons butter, 1 tablespoon olive oil, 1 small onion - finely chopped, 2 cloves garlic - finely chopped, 100ml white wine, 200ml beef broth, 100ml heavy cream, salt to taste',
         instructions:
           'Season the steaks with crushed peppercorns and sear in butter and olive oil until cooked to the desired doneness. In the same pan, sauté onions and garlic, then deglaze with white wine, add beef broth and cream, simmer until thickened, and serve over the steaks',
         _createdOn: 1722360256747,
@@ -1462,9 +1462,9 @@
         imageURL: 'https://bakewithzoha.com/wp-content/uploads/2023/12/hot-chocolate-tiramisu-featured.jpg',
         description:
           'Rich Italian dessert made of layers of coffee-soaked ladyfingers, mascarpone cheese, and cocoa powder, creating a creamy and indulgent treat with a perfect balance of sweetness and coffee flavor',
-        ingredients: '1 packet ladyfingers,\n500g mascarpone,\n3 eggs,\n3 table spoons sugar,\n500ml strong coffee,\n50ml marsala',
+        ingredients: '1 packet ladyfingers, 500g mascarpone, 3 eggs, 3 table spoons sugar, 500ml strong coffee, 50ml marsala',
         instructions:
-          'Brew and cool the coffee, then mix in the marsala.\nSeparate the eggs and beat the yolks with sugar until creamy; fold in mascarpone until smooth.\nWhip the egg whites until stiff and gently fold into the mascarpone mixture.\nDip ladyfingers briefly in the coffee mixture, then layer them in a dish.\nSpread half of the mascarpone mixture over the ladyfingers, then repeat layers.\nChill for at least 4 hours, and dust with cocoa powder before serving.',
+          'Brew and cool the coffee, then mix in the marsala. Separate the eggs and beat the yolks with sugar until creamy; fold in mascarpone until smooth. Whip the egg whites until stiff and gently fold into the mascarpone mixture. Dip ladyfingers briefly in the coffee mixture, then layer them in a dish. Spread half of the mascarpone mixture over the ladyfingers, then repeat layers. Chill for at least 4 hours, and dust with cocoa powder before serving.',
         _createdOn: 1722357112637,
         _id: '59c16686-08b2-4b45-8a8a-0ccf702e1056',
       },
