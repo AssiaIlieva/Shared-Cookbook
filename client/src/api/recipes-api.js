@@ -11,9 +11,12 @@ export const getAll = async () => {
   return recipes;
 };
 
+export const getOne = (recipeId) => requester.get(`${BASE_URL}/${recipeId}`);
+
 const recipesAPI = {
   create,
   getAll,
+  getOne,
 };
 
 export default recipesAPI;
