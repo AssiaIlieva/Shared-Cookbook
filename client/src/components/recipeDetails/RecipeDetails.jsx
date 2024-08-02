@@ -99,10 +99,7 @@ export default function RecipeDetails() {
           {showCommentForm && (
             <div className={styles.commentForm}>
               <h2>Add your comment</h2>
-              <div className={styles.commentField}>
-                <label>Username</label>
-                <div className={styles.staticField}>{username}</div>
-              </div>
+
               <div className={styles.commentField}>
                 <label>Comment</label>
                 <textarea className={styles.textarea} value={newComment} onChange={(e) => setNewComment(e.target.value)} rows="4" />
