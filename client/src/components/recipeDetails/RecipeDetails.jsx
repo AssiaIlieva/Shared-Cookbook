@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import styles from './RecipeDetails.module.css';
-import { useEffect, useState, useContext } from 'react';
+import { useEffect, useState } from 'react';
 import recipesAPI from '../../api/recipes-api';
 import commentsAPI from '../../api/comments-api';
 import { useAuthContext } from '../../contexts/AuthContext';
@@ -21,7 +21,8 @@ export default function RecipeDetails() {
         const result = await recipesAPI.getOne(recipeId);
         setRecipe(result);
         const comments = await commentsAPI.getAll(recipeId);
-        setComments(comments || []);
+        setError('');
+        setComments(comments);
       } catch (error) {
         setError(error.message);
       }
@@ -29,10 +30,22 @@ export default function RecipeDetails() {
   }, [recipeId]);
 
   const handleAddComment = async () => {
+    if (newComment.trim() === '') {
+      setError('Comment cannot be empty.');
+      return;
+    }
     try {
       const comment = await commentsAPI.create(recipeId, newComment);
-      setComments([...comments, comment]);
+      const newCommentWithAuthor = {
+        ...comment,
+        author: {
+          username: username,
+          _id: userId,
+        },
+      };
+      setComments([...comments, newCommentWithAuthor]);
       setNewComment('');
+      setError('');
       setShowCommentForm(false);
     } catch (error) {
       setError(error.message);
@@ -99,10 +112,12 @@ export default function RecipeDetails() {
           {showCommentForm && (
             <div className={styles.commentForm}>
               <h2>Add your comment</h2>
-
+              <div className={styles.commentField}>
+                <div className={styles.staticField}>{username}</div>
+              </div>
               <div className={styles.commentField}>
                 <label>Comment</label>
-                <textarea className={styles.textarea} value={newComment} onChange={(e) => setNewComment(e.target.value)} rows="4" />
+                <textarea className={styles.textarea} value={newComment} onChange={(e) => setNewComment(e.target.value)} rows="3" />
               </div>
               <button onClick={handleAddComment} className={styles.button}>
                 Add
