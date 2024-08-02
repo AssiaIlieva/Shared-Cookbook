@@ -5,7 +5,7 @@ const BASE_URL = 'http://localhost:3030/data/comments';
 export const getAll = async (recipeId) => {
   const query = new URLSearchParams({
     where: `recipeId="${recipeId}"`,
-    load: `owner=_ownerId:users`,
+    load: `author=_ownerId:users`,
   });
 
   const result = await requester.get(`${BASE_URL}?${query}`);
@@ -18,3 +18,10 @@ export const create = async (recipeId, text) => {
 
   return newComment;
 };
+
+const commentsAPI = {
+  create,
+  getAll,
+};
+
+export default commentsAPI;
