@@ -2,7 +2,7 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import styles from './RecipeDetails.module.css';
 import { useEffect, useState } from 'react';
 import recipesAPI from '../../api/recipes-api';
-import commentsAPI from '../../api/comments-api';
+import commentsAPI, { getAllByRecipe, remove } from '../../api/comments-api';
 import { useAuthContext } from '../../contexts/AuthContext';
 
 export default function RecipeDetails() {
@@ -58,6 +58,12 @@ export default function RecipeDetails() {
     if (hasConfirmed) {
       try {
         await recipesAPI.remove(recipeId);
+        const allComments = await getAllByRecipe(recipeId);
+        if (allComments.length > 0) {
+          allComments.map((comment) => {
+            remove(comment._id);
+          });
+        }
         navigate('/recipes');
       } catch (error) {
         setError(error.message);
