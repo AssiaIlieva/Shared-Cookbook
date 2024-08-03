@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import styles from './RecipeDetails.module.css';
 import { useEffect, useState } from 'react';
 import recipesAPI from '../../api/recipes-api';
@@ -6,6 +6,7 @@ import commentsAPI from '../../api/comments-api';
 import { useAuthContext } from '../../contexts/AuthContext';
 
 export default function RecipeDetails() {
+  const navigate = useNavigate();
   const { recipeId } = useParams();
   const { username, userId } = useAuthContext();
   const { isAuthenticated } = useAuthContext();
@@ -52,6 +53,18 @@ export default function RecipeDetails() {
     }
   };
 
+  const deleteButtonClickHandler = async () => {
+    const hasConfirmed = confirm(`Are you sure you want to delete the ${recipe.recipeName} recipe?`);
+    if (hasConfirmed) {
+      try {
+        await recipesAPI.remove(recipeId);
+        navigate('/recipes');
+      } catch (error) {
+        setError(error.message);
+      }
+    }
+  };
+
   const isOwner = userId === recipe._ownerId;
 
   return (
@@ -87,9 +100,9 @@ export default function RecipeDetails() {
                   <Link to={`/recipes/edit`} className={styles.button}>
                     Edit
                   </Link>
-                  <Link to={`/recipes/delete`} className={styles.button}>
+                  <button className={styles.button} onClick={deleteButtonClickHandler}>
                     Delete
-                  </Link>
+                  </button>
                 </>
               )}
             </div>
