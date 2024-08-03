@@ -21,7 +21,7 @@ export default function RecipeCreate() {
     try {
       const { _id: recipeId } = await createRecipe(values);
       //   navigate(`/recipes/${recipeId}/details`);
-      navigate('/');
+      navigate(`/recipes/${recipeId}/details`);
     } catch (error) {
       console.log(error.message);
     }
