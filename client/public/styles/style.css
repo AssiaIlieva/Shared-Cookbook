@@ -120,6 +120,30 @@ GENERAL CLASSES
   border-top: 1px solid #dadacb;
   margin: 14px;
 }
+/* global.css или styles.css */
+.error {
+  color: red;
+  background-color: #fdd;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group .error {
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 0.9em;
+}
 
 /*-------------------------------------------------
 HEADER CLASSES

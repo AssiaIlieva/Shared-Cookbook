@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+
 import recipesAPI from '../../api/recipes-api';
 
 export default function RecipeEdit() {
@@ -31,11 +32,14 @@ export default function RecipeEdit() {
     e.preventDefault();
     const values = Object.fromEntries(new FormData(e.currentTarget));
     const hasConfirmed = confirm(`Are you sure you want to edit the ${recipe.recipeName} recipe?`);
-    if (hasConfirmed) {
-      try {
-        await recipesAPI.edit(recipeId, values);
-        navigate(`/recipes/${recipeId}/details`);
-      } catch (error) {}
+    if (!hasConfirmed) {
+      return;
+    }
+    try {
+      await recipesAPI.edit(recipeId, values);
+      navigate(`/recipes/${recipeId}/details`);
+    } catch (error) {
+      setError(error.message);
     }
   };
 
