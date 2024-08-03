@@ -19,7 +19,7 @@ export default function RecipeCard({ _id, recipeName, recipeType, imageURL, desc
           <br />
         </p>
         <div className="button-link">
-          <Link to={`/recipes/${_id}/details`}>readmore</Link>
+          <Link to={`/recipes/${_id}/details`}>details</Link>
         </div>
       </div>
     </div>
