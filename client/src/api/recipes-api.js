@@ -14,11 +14,18 @@ export const getOne = (recipeId) => requester.get(`${BASE_URL}/${recipeId}`);
 
 export const remove = (recipeId) => requester.del(`${BASE_URL}/${recipeId}`);
 
+export const edit = async (recipeId, recipeData) => {
+  const result = await requester.put(`${BASE_URL}/${recipeId}`, recipeData);
+
+  return result;
+};
+
 const recipesAPI = {
   create,
   getAll,
   getOne,
   remove,
+  edit,
 };
 
 export default recipesAPI;

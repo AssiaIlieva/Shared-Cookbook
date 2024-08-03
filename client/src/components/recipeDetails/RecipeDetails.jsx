@@ -97,7 +97,7 @@ export default function RecipeDetails() {
               )}
               {isOwner && (
                 <>
-                  <Link to={`/recipes/edit`} className={styles.button}>
+                  <Link to={`/recipes/${recipeId}/edit`} className={styles.button}>
                     Edit
                   </Link>
                   <button className={styles.button} onClick={deleteButtonClickHandler}>

@@ -37,7 +37,7 @@ export default function Header() {
           {isAuthenticated ? (
             <ul>
               <li className="marRight20">
-                <NavLink to="/recipe/create" activeclassname="active">
+                <NavLink to="/recipes/create" activeclassname="active">
                   create recipe
                 </NavLink>
               </li>

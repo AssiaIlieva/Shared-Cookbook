@@ -4,7 +4,6 @@ import RecipeCard from '../recipeCard/RecipeCard';
 
 export default function Recipes() {
   const [recipes] = useGetAllRecipes();
-  console.log(recipes);
   return (
     <div className="panel-wrap">
       {recipes.length > 0 ? (
