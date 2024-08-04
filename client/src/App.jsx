@@ -13,6 +13,8 @@ import Footer from './components/footer/Footer';
 import RecipeCreate from './components/recipeCreate/RecipeCreate';
 import RecipeDetails from './components/recipeDetails/RecipeDetails';
 import RecipeEdit from './components/recipeEdit/RecipeEdit';
+import AuthGuard from './components/common/IsAuthGuard';
+import GuestGuard from './components/common/IsGuestGuard';
 
 function App() {
   return (
@@ -22,13 +24,17 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/logout" element={<Logout />} />
             <Route path="/recipes" element={<Recipes />} />
-            <Route path="/recipes/create" element={<RecipeCreate />} />
+            <Route element={<GuestGuard />}>
+              <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} />
+            </Route>
             <Route path="/recipes/:recipeId/details" element={<RecipeDetails />} />
-            <Route path="/recipes/:recipeId/edit" element={<RecipeEdit />} />
+            <Route element={<AuthGuard />}>
+              <Route path="/recipes/create" element={<RecipeCreate />} />
+              <Route path="/recipes/:recipeId/edit" element={<RecipeEdit />} />
+              <Route path="/logout" element={<Logout />} />
+            </Route>
           </Routes>
           <Footer />
         </>
