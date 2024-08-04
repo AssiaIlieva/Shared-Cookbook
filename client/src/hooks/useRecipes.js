@@ -10,11 +10,23 @@ export function useCreateRecipe() {
 
 export function useGetAllRecipes() {
   const [recipes, setRecipes] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    (async () => {
-      const result = await recipesAPI.getAll();
-      setRecipes(result);
-    })();
+    const fetchRecipes = async () => {
+      try {
+        const result = await recipesAPI.getAll();
+        setRecipes(result);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchRecipes();
   }, []);
-  return [recipes, setRecipes];
+
+  return { recipes, error, loading };
 }
