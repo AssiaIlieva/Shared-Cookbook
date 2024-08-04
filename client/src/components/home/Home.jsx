@@ -1,24 +1,29 @@
 import { useEffect, useState } from 'react';
+import { useModal } from '../../contexts/ModalContext';
+
 import recipesAPI from '../../api/recipes-api';
 import RecipeCard from '../recipeCard/RecipeCard';
 
 export default function Home() {
   const [lastRecipes, setLastRecipes] = useState([]);
-  const [error, setError] = useState('');
+  const { openModal } = useModal();
+
   useEffect(() => {
     (async () => {
       try {
         const result = await recipesAPI.getLast3Recipes();
         setLastRecipes(result);
       } catch (error) {
-        setError(error.message);
+        openModal(<div>{error.message}</div>);
       }
     })();
-  }, []);
+  }, [openModal]);
   return (
     <div>
       <div className="panel-wrap">
-        {error && <div className="error">{error}</div>}
+        <div className="marBottom30">
+          <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '40px' }}>welcome to the shared cookbook</h1>
+        </div>
         {lastRecipes.length > 0 ? (
           <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>Our Latest Recipes</h1>
         ) : (
