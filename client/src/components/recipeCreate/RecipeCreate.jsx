@@ -1,7 +1,8 @@
-import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+
 import useForm from '../../hooks/useForm';
 import { useCreateRecipe } from '../../hooks/useRecipes';
+import { useModal } from '../../contexts/ModalContext';
 
 const initialValues = {
   recipeName: '',
@@ -15,7 +16,7 @@ const initialValues = {
 
 export default function RecipeCreate() {
   const navigate = useNavigate();
-  const [error, setError] = useState('');
+  const { openModal, closeModal } = useModal();
   const createRecipe = useCreateRecipe();
 
   const validate = (values) => {
@@ -49,21 +50,43 @@ export default function RecipeCreate() {
   const createHandler = async (values) => {
     const errors = validate(values);
     if (Object.keys(errors).length > 0) {
-      setError(errors);
+      openModal(
+        <div>
+          <h3>Validation Errors</h3>
+          <ul>
+            {Object.entries(errors).map(([field, message]) => (
+              <li key={field}>{message}</li>
+            ))}
+          </ul>
+        </div>
+      );
       return;
     }
 
-    const hasConfirmed = confirm('Did you enter valid data? Do you want to create a new recipe?');
-    if (!hasConfirmed) {
-      return;
-    }
-
-    try {
-      const { _id: recipeId } = await createRecipe(values);
-      navigate(`/recipes/${recipeId}/details`);
-    } catch (error) {
-      setError({ api: error.message });
-    }
+    openModal(
+      <div className="modalContent">
+        <h3>Confirmation</h3>
+        <p>Did you enter valid data? Do you want to create a new recipe?</p>
+        <div className="buttonContainer">
+          <button
+            className="modal-button confirm-button"
+            onClick={async () => {
+              try {
+                const { _id: recipeId } = await createRecipe(values);
+                navigate(`/recipes/${recipeId}/details`);
+                closeModal();
+              } catch (error) {
+                openModal(<div>{error.message}</div>);
+              }
+            }}>
+            Confirm
+          </button>
+          <button className="modal-button cancel-button" onClick={closeModal}>
+            Cancel
+          </button>
+        </div>
+      </div>
+    );
   };
 
   const { values, changeHandler, submitHandler } = useForm(initialValues, createHandler);
@@ -79,7 +102,6 @@ export default function RecipeCreate() {
               </div>
               <div className="border" />
               <h2>Share your recipe</h2>
-              {error.api && <div className="error">{error.api}</div>}
               <form onSubmit={submitHandler}>
                 <div className="contact-form margin-top">
                   <div className="form-group">
@@ -94,7 +116,6 @@ export default function RecipeCreate() {
                         type="text"
                       />
                     </label>
-                    {error.recipeName && <div className="error">{error.recipeName}</div>}
                   </div>
                   <div className="form-group">
                     <label>
@@ -109,7 +130,6 @@ export default function RecipeCreate() {
                         <option value="Dessert">Dessert</option>
                       </select>
                     </label>
-                    {error.recipeType && <div className="error">{error.recipeType}</div>}
                   </div>
                   <div className="form-group">
                     <label>
@@ -125,14 +145,12 @@ export default function RecipeCreate() {
                         maxLength="5"
                       />
                     </label>
-                    {error.preparationTime && <div className="error">{error.preparationTime}</div>}
                   </div>
                   <div className="form-group">
                     <label>
                       <span>Image URL</span>
                       <input className="input_text" id="imageURL" name="imageURL" value={values.imageURL} onChange={changeHandler} type="text" />
                     </label>
-                    {error.imageURL && <div className="error">{error.imageURL}</div>}
                   </div>
                   <div className="form-group">
                     <label>
@@ -144,7 +162,6 @@ export default function RecipeCreate() {
                         value={values.description}
                         onChange={changeHandler}></textarea>
                     </label>
-                    {error.description && <div className="error">{error.description}</div>}
                   </div>
                   <div className="form-group">
                     <label>
@@ -156,7 +173,6 @@ export default function RecipeCreate() {
                         value={values.ingredients}
                         onChange={changeHandler}></textarea>
                     </label>
-                    {error.ingredients && <div className="error">{error.ingredients}</div>}
                   </div>
                   <div className="form-group">
                     <label>
@@ -168,7 +184,6 @@ export default function RecipeCreate() {
                         value={values.instructions}
                         onChange={changeHandler}></textarea>
                     </label>
-                    {error.instructions && <div className="error">{error.instructions}</div>}
                   </div>
                   <input type="submit" className="button" value="Create Recipe" />
                 </div>
