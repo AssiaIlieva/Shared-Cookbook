@@ -2,19 +2,19 @@ import { Link, useNavigate, useParams } from 'react-router-dom';
 import styles from './RecipeDetails.module.css';
 import { useEffect, useState } from 'react';
 import recipesAPI from '../../api/recipes-api';
-import commentsAPI, { getAllByRecipe, remove } from '../../api/comments-api';
+import commentsAPI from '../../api/comments-api';
 import { useAuthContext } from '../../contexts/AuthContext';
+import { useModal } from '../../contexts/ModalContext';
+import Comment from './Comments'; // Импортиране на компонента Comment
 
 export default function RecipeDetails() {
   const navigate = useNavigate();
   const { recipeId } = useParams();
-  const { username, userId } = useAuthContext();
-  const { isAuthenticated } = useAuthContext();
+  const { username, userId, isAuthenticated } = useAuthContext();
+  const { openModal, closeModal } = useModal();
   const [error, setError] = useState('');
   const [recipe, setRecipe] = useState({});
   const [comments, setComments] = useState([]);
-  const [newComment, setNewComment] = useState('');
-  const [showCommentForm, setShowCommentForm] = useState(false);
 
   useEffect(() => {
     (async () => {
@@ -26,48 +26,37 @@ export default function RecipeDetails() {
         setComments(comments);
       } catch (error) {
         setError(error.message);
+        openModal(<div>{error.message}</div>);
       }
     })();
-  }, [recipeId]);
+  }, [recipeId, openModal]);
 
-  const handleAddComment = async () => {
-    if (newComment.trim() === '') {
-      setError('Comment cannot be empty.');
-      return;
-    }
-    try {
-      const comment = await commentsAPI.create(recipeId, newComment);
-      const newCommentWithAuthor = {
-        ...comment,
-        author: {
-          username: username,
-          _id: userId,
-        },
-      };
-      setComments([...comments, newCommentWithAuthor]);
-      setNewComment('');
-      setError('');
-      setShowCommentForm(false);
-    } catch (error) {
-      setError(error.message);
-    }
+  const deleteButtonClickHandler = () => {
+    openModal(
+      <div>
+        <p>Are you sure you want to delete the {recipe.recipeName} recipe?</p>
+        <button onClick={handleDeleteConfirm} className={styles.button}>
+          Yes
+        </button>
+        <button onClick={closeModal} className={styles.button}>
+          No
+        </button>
+      </div>
+    );
   };
 
-  const deleteButtonClickHandler = async () => {
-    const hasConfirmed = confirm(`Are you sure you want to delete the ${recipe.recipeName} recipe?`);
-    if (hasConfirmed) {
-      try {
-        await recipesAPI.remove(recipeId);
-        const allComments = await getAllByRecipe(recipeId);
-        if (allComments.length > 0) {
-          allComments.map((comment) => {
-            remove(comment._id);
-          });
-        }
-        navigate('/recipes');
-      } catch (error) {
-        setError(error.message);
+  const handleDeleteConfirm = async () => {
+    try {
+      await recipesAPI.remove(recipeId);
+      const allComments = await commentsAPI.getAllByRecipe(recipeId);
+      if (allComments.length > 0) {
+        await Promise.all(allComments.map((comment) => commentsAPI.remove(comment._id)));
       }
+      closeModal();
+      navigate('/recipes');
+    } catch (error) {
+      setError(error.message);
+      openModal(<div>{error.message}</div>);
     }
   };
 
@@ -96,11 +85,6 @@ export default function RecipeDetails() {
             <h2>Preparation Instructions</h2>
             <p>{recipe.instructions}</p>
             <div className={styles.buttonContainer}>
-              {isAuthenticated && (
-                <button onClick={() => setShowCommentForm(true)} className={styles.button}>
-                  Add comment
-                </button>
-              )}
               {isOwner && (
                 <>
                   <Link to={`/recipes/${recipeId}/edit`} className={styles.button}>
@@ -113,36 +97,15 @@ export default function RecipeDetails() {
               )}
             </div>
           </div>
-          <div className={styles.commentsSection}>
-            <h2>Comments</h2>
-            {comments.length > 0 ? (
-              comments.map((comment) => (
-                <div key={comment._id} className={styles.comment}>
-                  <hr className={styles.commentSeparator} />
-                  <p>
-                    {comment.author.username}: {comment.text}
-                  </p>
-                </div>
-              ))
-            ) : (
-              <p>No comments available.</p>
-            )}
-          </div>
-          {showCommentForm && (
-            <div className={styles.commentForm}>
-              <h2>Add your comment</h2>
-              <div className={styles.commentField}>
-                <div className={styles.staticField}>{username}</div>
-              </div>
-              <div className={styles.commentField}>
-                <label>Comment</label>
-                <textarea className={styles.textarea} value={newComment} onChange={(e) => setNewComment(e.target.value)} rows="3" />
-              </div>
-              <button onClick={handleAddComment} className={styles.button}>
-                Add
-              </button>
-            </div>
-          )}
+          <Comment
+            recipeId={recipeId}
+            username={username}
+            userId={userId}
+            comments={comments}
+            setComments={setComments}
+            setError={setError}
+            isAuthenticated={isAuthenticated}
+          />
         </div>
       </div>
     </div>
