@@ -1,29 +1,37 @@
 import { Link, useNavigate } from 'react-router-dom';
-import { useState } from 'react';
-
 import { useRegister } from '../../hooks/useAuth';
 import useForm from '../../hooks/useForm';
+import { useModal } from '../../contexts/ModalContext';
 
 const initialValues = { username: '', email: '', password: '', rePassword: '' };
+
 export default function Register() {
-  const [error, setError] = useState('');
   const register = useRegister();
   const navigate = useNavigate();
+  const { openModal } = useModal();
 
   const registerHandler = async (values) => {
+    if (!values.username) {
+      openModal(<div>Username is required</div>);
+      return;
+    }
+    if (!values.email) {
+      openModal(<div>Email is required</div>);
+      return;
+    }
     if (values.password.length < 6) {
-      setError('Password must be at least 6 characters');
+      openModal(<div>Password must be at least 6 characters</div>);
       return;
     }
     if (values.password !== values.rePassword) {
-      setError('Password Missmatch!');
+      openModal(<div>Password Missmatch!</div>);
       return;
     }
     try {
       await register(values.username, values.email, values.password);
       navigate('/');
     } catch (error) {
-      setError(error.message);
+      openModal(<div>{error.message}</div>);
     }
   };
 
@@ -73,12 +81,6 @@ export default function Register() {
                       type="password"
                     />
                   </label>
-                  {error && (
-                    <label>
-                      <span>Error Message</span>
-                      <p style={{ fontSize: '16px', color: 'red', lineHeight: '0px' }}>{error}</p>
-                    </label>
-                  )}
                   <input type="submit" className="button" value="register" />
                 </div>
               </form>
