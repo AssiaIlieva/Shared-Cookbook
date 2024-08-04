@@ -9,7 +9,7 @@ export default function Recipes() {
       {recipes.length > 0 ? (
         <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>Our recipes</h1>
       ) : (
-        <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>Not recipes yet</h1>
+        <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>No recipes yet</h1>
       )}
 
       <div className="panel-wrapper">

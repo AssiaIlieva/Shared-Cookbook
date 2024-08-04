@@ -20,12 +20,27 @@ export const edit = async (recipeId, recipeData) => {
   return result;
 };
 
+export const getLast3Recipes = async () => {
+  const query = new URLSearchParams({
+    sortBy: '_createdOn desc',
+    offset: 0,
+    pageSize: 3,
+  });
+
+  // console.log(query);
+  const result = await requester.get(`${BASE_URL}?sortBy=_createdOn%20desc&offset=0&pageSize=3`);
+  const latestRecipes = Object.values(result);
+
+  return latestRecipes;
+};
+
 const recipesAPI = {
   create,
   getAll,
   getOne,
   remove,
   edit,
+  getLast3Recipes,
 };
 
 export default recipesAPI;
