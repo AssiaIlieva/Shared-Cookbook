@@ -1,0 +1,81 @@
+/* Модален фон */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Съдържание на модала */
+.modalContent {
+  background: #f3f3ee;
+  padding: 30px;
+  border-radius: 8px;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Затварящ бутон */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #cf9359;
+}
+
+.closeButton:hover {
+  color: #a37147;
+}
+
+/* Заглавие на модала */
+.modalContent h3 {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 1.8em;
+  color: #50453b;
+  margin-bottom: 20px;
+}
+
+/* Съобщение в модала */
+.modalContent p {
+  font-family: 'Ropa Sans', sans-serif;
+  font-size: 1.2em;
+  color: #978e86;
+  margin-bottom: 30px;
+}
+
+/* Контейнер за бутоните */
+.buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+/* Бутони */
+.button {
+  padding: 8px 25px;
+  background: #cf9359;
+  color: #f7f7f7;
+  text-transform: uppercase;
+  font-family: 'Ropa Sans', sans-serif;
+  border: none;
+  font-size: 8px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #a37147;
+}
