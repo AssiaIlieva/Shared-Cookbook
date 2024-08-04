@@ -1,21 +1,31 @@
 import { Link, useNavigate } from 'react-router-dom';
 import useForm from '../../hooks/useForm';
 import { useLogin } from '../../hooks/useAuth';
+import { useModal } from '../../contexts/ModalContext';
 
 const initialValues = { email: '', password: '' };
 
 export default function Login() {
   const login = useLogin();
   const navigate = useNavigate();
+  const { openModal } = useModal();
+
   const loginHandler = async ({ email, password }) => {
+    if (!email || !password) {
+      openModal(<div>All fields are required!</div>);
+      return;
+    }
+
     try {
       await login(email, password);
       navigate('/');
     } catch (error) {
-      console.log(error.message);
+      openModal(<div>{error.message}</div>);
     }
   };
+
   const { values, changeHandler, submitHandler } = useForm(initialValues, loginHandler);
+
   return (
     <div className="top-content">
       <div className="page-wrapper">
