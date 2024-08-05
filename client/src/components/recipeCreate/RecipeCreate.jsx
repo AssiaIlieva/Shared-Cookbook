@@ -66,7 +66,7 @@ export default function RecipeCreate() {
     openModal(
       <div className="modalContent">
         <h3>Confirmation</h3>
-        <p>Did you enter valid data? Do you want to create a new recipe?</p>
+        <p>Do you want to create a new recipe?</p>
         <div className="buttonContainer">
           <button
             className="modal-button confirm-button"

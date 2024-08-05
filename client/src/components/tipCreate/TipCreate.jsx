@@ -52,9 +52,9 @@ export default function TipsCreate() {
     let imageURL = '';
 
     if (values.tipType === 'Kitchen hacks') {
-      imageURL = '/images/hack.png'; // Заменете с реалния път до снимката за хаковете
+      imageURL = '/images/hack.png';
     } else if (values.tipType === 'Cooking Techniques') {
-      imageURL = '/images/technique.png'; // Заменете с реалния път до снимката за техниките
+      imageURL = '/images/technique.png';
     }
 
     const formData = {
@@ -65,7 +65,7 @@ export default function TipsCreate() {
     openModal(
       <div className="modalContent">
         <h3>Confirmation</h3>
-        <p>Did you enter valid data? Do you want to create a new tip?</p>
+        <p>Do you want to create a new tip?</p>
         <div className="buttonContainer">
           <button
             className="modal-button confirm-button"

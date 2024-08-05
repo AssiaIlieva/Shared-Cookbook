@@ -35,7 +35,7 @@ export default function Tips() {
           <div className="panel">
             {tips.length > 0 ? (
               <div className="title">
-                <h1 style={{ fontSize: 36, marginTop: 40 }}>check our tips - Become a real chef</h1>
+                <h1 style={{ fontSize: 36, marginTop: 40 }}>Discover Our Tips and Master the Art of Cooking!</h1>
               </div>
             ) : (
               <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>No tips are available yet</h1>

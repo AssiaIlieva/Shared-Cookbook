@@ -9,7 +9,7 @@ import styles from './TipDetails.module.css';
 export default function TipDetails() {
   const navigate = useNavigate();
   const { tipId } = useParams();
-  const { username, userId, isAuthenticated } = useAuthContext();
+  const { userId, isAuthenticated } = useAuthContext();
   const { openModal, closeModal } = useModal();
   const [error, setError] = useState('');
   const [tip, setTip] = useState(null);
