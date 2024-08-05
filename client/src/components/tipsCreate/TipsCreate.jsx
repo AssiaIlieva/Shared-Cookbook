@@ -1,4 +1,96 @@
+import { useNavigate } from 'react-router-dom';
+
+import { useCreateTip } from '../../hooks/useTips';
+import { useModal } from '../../contexts/ModalContext';
+import useForm from '../../hooks/useForm';
+
+const initialValues = {
+  heading: '',
+  tipType: '',
+  description: '',
+  content: '',
+  likedBy: [],
+};
+
 export default function TipsCreate() {
+  const navigate = useNavigate();
+  const { openModal, closeModal } = useModal();
+  const createTip = useCreateTip();
+
+  const validate = (values) => {
+    const errors = {};
+    if (!values.heading) {
+      errors.heading = 'Heading is required';
+    }
+    if (!values.tipType) {
+      errors.tipType = 'Tip Type is required';
+    }
+    if (!values.description) {
+      errors.description = 'Description is required';
+    }
+    if (!values.content) {
+      errors.content = 'Content is required';
+    }
+    return errors;
+  };
+
+  const createHandler = async (values) => {
+    const errors = validate(values);
+    if (Object.keys(errors).length > 0) {
+      openModal(
+        <div>
+          <h3>Validation Errors</h3>
+          <ul>
+            {Object.entries(errors).map(([field, message]) => (
+              <li key={field}>{message}</li>
+            ))}
+          </ul>
+        </div>
+      );
+      return;
+    }
+
+    let imageURL = '';
+
+    if (values.tipType === 'Kitchen hacks') {
+      imageURL = '/styles/hack.png'; // Заменете с реалния път до снимката за хаковете
+    } else if (values.tipType === 'Cooking Techniques') {
+      imageURL = '/styles/technique.png'; // Заменете с реалния път до снимката за техниките
+    }
+
+    const formData = {
+      ...values,
+      imageURL,
+    };
+
+    openModal(
+      <div className="modalContent">
+        <h3>Confirmation</h3>
+        <p>Did you enter valid data? Do you want to create a new tip?</p>
+        <div className="buttonContainer">
+          <button
+            className="modal-button confirm-button"
+            onClick={async () => {
+              try {
+                const { _id: tipId } = await createTip(formData);
+                navigate(`/tips/${tipId}/details`);
+                closeModal();
+              } catch (error) {
+                openModal(<div>{error.message}</div>);
+              }
+            }}>
+            Confirm
+          </button>
+          <button className="modal-button cancel-button" onClick={closeModal}>
+            Cancel
+          </button>
+        </div>
+      </div>
+    );
+  };
+
+  const { values, changeHandler, submitHandler } = useForm(initialValues, createHandler);
+
   return (
     <div className="top-content">
       <div className="page-wrapper">
@@ -9,46 +101,45 @@ export default function TipsCreate() {
                 <h1>Create a Tip</h1>
               </div>
               <div className="border" />
-              <h2>Share your Tip</h2>
-              <form>
+              <h2>Share your tip</h2>
+              <form onSubmit={submitHandler}>
                 <div className="contact-form margin-top">
                   <div className="form-group">
                     <label>
                       <span>Heading</span>
-                      <input className="input_text" id="heading" name="heading" type="text" />
+                      <input className="input_text" id="heading" name="heading" type="text" value={values.heading} onChange={changeHandler} />
                     </label>
                   </div>
                   <div className="form-group">
                     <label>
                       <span>Tip Type</span>
-                      <select className="input_text" id="tipType" name="tipType" value="">
+                      <select className="input_text" id="tipType" name="tipType" value={values.tipType} onChange={changeHandler}>
                         <option value="" disabled>
-                          Please, choose the recipe type
+                          Please, choose the tip type
                         </option>
                         <option value="Kitchen hacks">Hack</option>
-                        <option value="Cooking Techniques">Appetizer</option>
+                        <option value="Cooking Techniques">Technique</option>
                       </select>
                     </label>
                   </div>
                   <div className="form-group">
                     <label>
-                      <span>Image URL</span>
-                      <input className="input_text" id="imageURL" name="imageURL" type="text" />
-                    </label>
-                  </div>
-                  <div className="form-group">
-                    <label>
                       <span>Short Description</span>
-                      <textarea className="input_text" id="description" name="description"></textarea>
+                      <textarea
+                        className="input_text"
+                        id="description"
+                        name="description"
+                        value={values.description}
+                        onChange={changeHandler}></textarea>
                     </label>
                   </div>
                   <div className="form-group">
                     <label>
                       <span>Content</span>
-                      <textarea className="message" id="content" name="content"></textarea>
+                      <textarea className="message" id="content" name="content" value={values.content} onChange={changeHandler}></textarea>
                     </label>
                   </div>
-                  <input type="submit" className="button" value="Create Recipe" />
+                  <input type="submit" className="button" value="Create Tip" />
                 </div>
               </form>
               <div className="clearing" />

@@ -1472,62 +1472,23 @@
     comments: {
       '0a272c58-b7ea-4e09-a000-7ec988248f66': {
         _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
-        content: 'Great recipe!',
+        content: 'Test!',
         recipeId: '8f414b4f-ab39-4d36-bedb-2ad69da9c830',
         _createdOn: 1614260681375,
         _id: '0a272c58-b7ea-4e09-a000-7ec988248f66',
       },
     },
-    records: {
-      i01: {
-        name: 'John1',
-        val: 1,
-        _createdOn: 1613551388703,
-      },
-      i02: {
-        name: 'John2',
-        val: 1,
-        _createdOn: 1613551388713,
-      },
-      i03: {
-        name: 'John3',
-        val: 2,
-        _createdOn: 1613551388723,
-      },
-      i04: {
-        name: 'John4',
-        val: 2,
-        _createdOn: 1613551388733,
-      },
-      i05: {
-        name: 'John5',
-        val: 2,
-        _createdOn: 1613551388743,
-      },
-      i06: {
-        name: 'John6',
-        val: 3,
-        _createdOn: 1613551388753,
-      },
-      i07: {
-        name: 'John7',
-        val: 3,
-        _createdOn: 1613551388763,
-      },
-      i08: {
-        name: 'John8',
-        val: 2,
-        _createdOn: 1613551388773,
-      },
-      i09: {
-        name: 'John9',
-        val: 3,
-        _createdOn: 1613551388783,
-      },
-      i10: {
-        name: 'John10',
-        val: 1,
-        _createdOn: 1613551388793,
+    tips: {
+      '0a272c58-b7ea-4e09-a000-7ec988248f66': {
+        _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
+        content: 'fdgs',
+        description: 'rfgsd',
+        heading: 'Test',
+        imageURL: '/styles/technique.png',
+        likedBy: [],
+        tipType: 'Cooking Techniques',
+        _createdOn: 1614260681375,
+        _id: '0a272c58-b7ea-4e09-a000-7ec988248f66',
       },
     },
     catches: {

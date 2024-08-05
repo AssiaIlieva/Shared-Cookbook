@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import tipsAPI from '../api/recipes-api';
+import tipsAPI from '../api/tips-api';
 
 export function useCreateTip() {
   const tipCreateHandler = (tipData) => tipsAPI.create(tipData);
