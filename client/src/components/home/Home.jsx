@@ -28,10 +28,10 @@ export default function Home() {
         <h1
           style={{
             textAlign: 'center',
-            color: '#414141', // Цвят на текста
-            backgroundColor: '#cf9359', // Фон
-            padding: '20px', // Отстояние около текста
-            borderRadius: '5px', // Закръглени ъгли
+            color: '#414141',
+            backgroundColor: '#cf9359',
+            padding: '20px',
+            borderRadius: '5px',
           }}>
           Loading...
         </h1>
@@ -42,8 +42,18 @@ export default function Home() {
   return (
     <div>
       <div className="panel-wrap">
-        <div className="marBottom30">
-          <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '40px' }}>Welcome to the Shared Cookbook</h1>
+        <div className="panel-wrapper" style={{ marginTop: '20px' }}>
+          <h1
+            style={{
+              textAlign: 'center',
+              color: '#414141',
+              backgroundColor: '#cf9359',
+              padding: '20px',
+              borderRadius: '5px',
+              fontWeight: 'bold',
+            }}>
+            Welcome to the Shared Cookbook
+          </h1>
         </div>
         {lastRecipes.length > 0 ? (
           <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>Our Latest Recipes</h1>

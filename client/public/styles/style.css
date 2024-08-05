@@ -203,7 +203,6 @@ HEADER CLASSES
   text-align: left;
   font-weight: normal;
 }
-
 .menu {
   width: 600px;
   float: left;
@@ -282,7 +281,7 @@ PANEL CLASSES
   background: url(../images/icon-more.png) no-repeat;
   width: 16px;
   height: 16px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   padding-left: 20px;
 }
 
@@ -724,7 +723,7 @@ MODAL STYLES
   margin-right: 10px;
 }
 
-/* Стилове за Confirm бутона */
+
 .confirm-button {
   background-color: #cf9359;
 }
@@ -733,12 +732,11 @@ MODAL STYLES
   background-color: #a87240;
 }
 
-/* Стилове за Cancel бутона */
+
 .cancel-button {
-  background-color: #d4c6b2; /* Цвят на фона */
-  color: #282623; /* Цвета на текста */
+  background-color: #d4c6b2; 
+  color: #282623; 
 }
 
 .cancel-button:hover {
-  background-color: #d3b48a; /* По-тъмен цвят при задържане на мишката */
-}
+  background-color: #d3b48a; 

@@ -3,7 +3,7 @@
 .cardWrapper {
   width: 450px; /* Ширина на картата */
   padding: 20px; /* Вътрешен падинг */
-  padding-bottom: 30px; /* Падинг отдолу */
+  padding-bottom: 10px; /* Падинг отдолу */
   border: 1px solid #cf9359; /* Бежова рамка */
   border-radius: 8px; /* Скругление на ъглите */
   background-color: #f3f3ee; /* Фонов цвят */
