@@ -9,7 +9,6 @@ const initialValues = {
   tipType: '',
   description: '',
   content: '',
-  likedBy: [],
 };
 
 export default function TipsCreate() {
@@ -53,9 +52,9 @@ export default function TipsCreate() {
     let imageURL = '';
 
     if (values.tipType === 'Kitchen hacks') {
-      imageURL = '/styles/hack.png'; // Заменете с реалния път до снимката за хаковете
+      imageURL = '/images/hack.png'; // Заменете с реалния път до снимката за хаковете
     } else if (values.tipType === 'Cooking Techniques') {
-      imageURL = '/styles/technique.png'; // Заменете с реалния път до снимката за техниките
+      imageURL = '/images/technique.png'; // Заменете с реалния път до снимката за техниките
     }
 
     const formData = {
@@ -93,7 +92,7 @@ export default function TipsCreate() {
 
   return (
     <div className="top-content">
-      <div className="page-wrapper">
+      <div className="panel-wrapper">
         <div className="primary-content marRight30">
           <div className="mid-panel">
             <div className="mid-panel-content">

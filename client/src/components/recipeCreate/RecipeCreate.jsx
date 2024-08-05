@@ -93,7 +93,7 @@ export default function RecipeCreate() {
 
   return (
     <div className="top-content">
-      <div className="page-wrapper">
+      <div className="panel-wrapper">
         <div className="primary-content marRight30">
           <div className="mid-panel">
             <div className="mid-panel-content">
