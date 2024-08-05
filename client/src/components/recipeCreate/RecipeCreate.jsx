@@ -98,7 +98,7 @@ export default function RecipeCreate() {
           <div className="mid-panel">
             <div className="mid-panel-content">
               <div className="title">
-                <h1>Create Recipe</h1>
+                <h1>Create a Recipe</h1>
               </div>
               <div className="border" />
               <h2>Share your recipe</h2>
