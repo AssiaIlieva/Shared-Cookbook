@@ -3,10 +3,13 @@ import { useModal } from '../../contexts/ModalContext';
 
 import recipesAPI from '../../api/recipes-api';
 import RecipeCard from '../recipeCard/RecipeCard';
+import tipsAPI from '../../api/tips-api';
+import TipCard from '../tipCard/TipCard';
 
 export default function Home() {
   const [lastRecipes, setLastRecipes] = useState([]);
-  const [loading, setLoading] = useState(true); // Добавено състояние за зареждане
+  const [lastTips, setLastTips] = useState([]);
+  const [loading, setLoading] = useState(true);
   const { openModal } = useModal();
 
   useEffect(() => {
@@ -17,7 +20,17 @@ export default function Home() {
       } catch (error) {
         openModal(<div>{error.message}</div>);
       } finally {
-        setLoading(false); // Сменяме състоянието на зареждане, след като данните са извлечени
+        setLoading(false);
+      }
+    })();
+    (async () => {
+      try {
+        const result = await tipsAPI.getLast3Tips();
+        setLastTips(result);
+      } catch (error) {
+        openModal(<div>{error.message}</div>);
+      } finally {
+        setLoading(false);
       }
     })();
   }, [openModal]);
@@ -60,7 +73,7 @@ export default function Home() {
         ) : (
           <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>No recipes yet</h1>
         )}
-        <div className="panel-wrapper">
+        <div className="panel-wrapper" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
           {lastRecipes.map((recipe) => (
             <RecipeCard key={recipe._id} {...recipe} />
           ))}
@@ -68,7 +81,18 @@ export default function Home() {
       </div>
       <div className="clearing" />
       <div className="page-wrap">
-        <div className="page-wrapper"></div>
+        <div style={{ marginTop: '50px' }}>
+          {lastTips.length > 0 ? (
+            <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>Our Latest Tips</h1>
+          ) : (
+            <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>No Tips yet</h1>
+          )}
+        </div>
+        <div className="page-wrapper" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
+          {lastTips.map((tip) => (
+            <TipCard key={tip._id} {...tip} />
+          ))}
+        </div>
       </div>
     </div>
   );
