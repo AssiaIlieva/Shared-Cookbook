@@ -18,6 +18,7 @@ import GuestGuard from './components/common/IsGuestGuard';
 import TipCreate from './components/tipCreate/TipCreate';
 import Tips from './components/tips/Tips';
 import TipDetails from './components/tipDetails/TipDetails';
+import TipEdit from './components/tipEdit/TipEdit';
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
               <Route path="/recipes/create" element={<RecipeCreate />} />
               <Route path="/recipes/:recipeId/edit" element={<RecipeEdit />} />
               <Route path="/tips/create" element={<TipCreate />} />
+              <Route path="/tips/:tipId/edit" element={<TipEdit />} />
               <Route path="/logout" element={<Logout />} />
             </Route>
           </Routes>
