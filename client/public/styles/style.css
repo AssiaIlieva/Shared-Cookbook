@@ -193,7 +193,7 @@ HEADER CLASSES
 .header-right-panel-top {
   width: 280px;
   display: flex;
-  justify-content: left; /* Хоризонтално центриране */
+  justify-content: left; 
   align-items: center;
 }
 .header-right-panel p {
@@ -321,14 +321,14 @@ TOP PANEL CLASSES
 LAYOUT CLASSES
 -------------------------------------------------*/
 .page-wrapper {
-  width: 650px;
+  width: 900px;
   margin: 0 auto;
   margin-top: 30px;
   padding-bottom: 50px;
   overflow: hidden;
 }
 .primary-content {
-  width: 630px;
+  width: 1200px;
   float: left;
   overflow: hidden;
 }
@@ -338,7 +338,7 @@ LAYOUT CLASSES
   overflow: hidden;
 }
 .mid-panel .panel {
-  width: 580px;
+  width: 800px;
   overflow: hidden;
   padding-top: 30px;
   padding-left: 30px;
@@ -350,7 +350,7 @@ LAYOUT CLASSES
   font-weight: normal;
 }
 .content img {
-  float: left;
+  float: right;
 }
 .content p {
   padding-bottom: 10px;
@@ -506,7 +506,9 @@ SIDEBAR CLASSS
 }
 .midpanel .title h1 {
   color: #50453b;
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 34;
+
 }
 .midpanel .border {
   border-bottom: 1px solid #dadacb;

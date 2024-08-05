@@ -15,7 +15,9 @@ import RecipeDetails from './components/recipeDetails/RecipeDetails';
 import RecipeEdit from './components/recipeEdit/RecipeEdit';
 import AuthGuard from './components/common/IsAuthGuard';
 import GuestGuard from './components/common/IsGuestGuard';
-import TipsCreate from './components/tipsCreate/TipsCreate';
+import TipCreate from './components/tipCreate/TipCreate';
+import Tips from './components/tips/Tips';
+import TipDetails from './components/tipDetails/TipDetails';
 
 function App() {
   return (
@@ -26,15 +28,17 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/recipes" element={<Recipes />} />
+            <Route path="/tips" element={<Tips />} />
             <Route element={<GuestGuard />}>
               <Route path="/register" element={<Register />} />
               <Route path="/login" element={<Login />} />
             </Route>
             <Route path="/recipes/:recipeId/details" element={<RecipeDetails />} />
+            <Route path="/tips/:tipId/details" element={<TipDetails />} />
             <Route element={<AuthGuard />}>
               <Route path="/recipes/create" element={<RecipeCreate />} />
               <Route path="/recipes/:recipeId/edit" element={<RecipeEdit />} />
-              <Route path="/tips/create" element={<TipsCreate />} />
+              <Route path="/tips/create" element={<TipCreate />} />
               <Route path="/logout" element={<Logout />} />
             </Route>
           </Routes>
