@@ -1,0 +1,69 @@
+.cardWrapper {
+  width: 700px;
+  padding: 20px;
+  padding-bottom: 10px;
+  border: 1px solid #cf9359;
+  border-radius: 8px;
+  background-color: #f3f3ee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  box-sizing: border-box;
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+}
+
+.image {
+  width: 100px;
+  height: 100px;
+  margin-right: 50px;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+.title {
+  margin-top: 0;
+}
+
+.title h1 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.tipType {
+  margin-top: 0;
+  font-size: 1.2em;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.description {
+  font-size: 1.1em;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.buttonLink {
+  font-size: 1.1em;
+  margin-top: 20px;
+}
+
+.borderBottom {
+  border-bottom: 1px solid #cf9359;
+  margin-bottom: 10px;
+}
