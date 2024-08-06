@@ -14,9 +14,9 @@
     - [3. Start the Application](#3-start-the-application)
       - [1. Terminal 1: Start the Client](#1-terminal-1-start-the-client)
       - [2. Terminal 2: Start the Server](#2-terminal-2-start-the-server)
-  - [4. 🌐 Visit the App](#4--visit-the-app)
-  - [5. 💡 Usage](#5--usage)
-    - [6. 📝 Features](#6--features)
+  - [🌐 Visit the App](#-visit-the-app)
+  - [💡 Usage](#-usage)
+  - [📝 Features](#-features)
 
 ## 📖 Overview
 
@@ -79,12 +79,12 @@ cd server
 node server.js
 ```
 
-## 4. 🌐 Visit the App
+## 🌐 Visit the App
 
 Open your browser and go to the following URL to access the application:
 http://localhost:5173/
 
-## 5. 💡 Usage
+## 💡 Usage
 
 - **Explore Recipes and Tips:** Browse through a variety of recipes and cooking tips. Non-logged-in users can explore content but have limited interactions.
 - **Search Functionality:** Search for recipes and tips by type.
@@ -99,7 +99,7 @@ http://localhost:5173/
     - Cannot like their own tips, but can edit or delete them.
 - **Home Page Highlights:** The home page displays the three most recently added recipes and the three most recently added cooking tips.
 
-### 6. 📝 Features
+## 📝 Features
 
 - **Recipe Sharing:** Users can share their own recipes and explore others' recipes.
 - **Cooking Tips:** Browse and contribute cooking tips and hacks.
