@@ -152,4 +152,4 @@ Here's a screenshot of the Tips Details Page:
 
 ## 📜 License
 
-For information about the license, please see the [LICENSE](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/LICENCE.md)file.
+For information about the license, please see the [LICENSE](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/LICENCE.md) file.
