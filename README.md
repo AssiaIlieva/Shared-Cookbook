@@ -17,13 +17,15 @@
   - [🌐 Visit the App](#-visit-the-app)
   - [💡 Usage](#-usage)
   - [📝 Features](#-features)
+  - [📸 Screenshots](#-screenshots)
+    - [🏠 Home Page](#-home-page)
 
 ## 📖 Overview
 
 **Shared Cook-book** is a comprehensive platform that allows users to:
 
 - Share and discover recipes.
-- Explore cooking tips and hacks.
+- Share and explore cooking tips and hacks.
 
 The application provides an engaging and interactive experience for users who are passionate about cooking and want to expand their culinary knowledge.
 
@@ -110,3 +112,11 @@ http://localhost:5173/
   - Edit and delete own recipes and tips.
 - **Content Viewing for Non-Logged-In Users:** Browse and search recipes and tips without account access.
 - **Home Page Preview:** View the latest three recipes and tips directly on the home page.
+
+## 📸 Screenshots
+
+### 🏠 Home Page
+
+Here's a screenshot of the Home Page:
+
+![Home Page](https://github.com/AssiaIlieva/Shared-Cookbook/raw/main/client/public/images/home-page.png)

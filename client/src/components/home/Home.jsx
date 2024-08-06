@@ -61,16 +61,14 @@ export default function Home() {
               textAlign: 'center',
               color: '#50453b;',
               fontSize: '35px',
-              padding: '20px',
-              borderRadius: '5px',
             }}>
             Welcome to the Shared Cookbook
           </h1>
         </div>
         {lastRecipes.length > 0 ? (
-          <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>Our Latest Recipes</h1>
+          <h1 style={{ textAlign: 'center', fontSize: '35px' }}>Our Latest Recipes</h1>
         ) : (
-          <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>No recipes yet</h1>
+          <h1 style={{ textAlign: 'center', fontSize: '35px' }}>No recipes yet</h1>
         )}
         <div className="panel-wrapper" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
           {lastRecipes.map((recipe) => (
@@ -82,9 +80,9 @@ export default function Home() {
       <div className="page-wrap">
         <div style={{ marginTop: '50px' }}>
           {lastTips.length > 0 ? (
-            <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>Our Latest Tips</h1>
+            <h1 style={{ textAlign: 'center', fontSize: '35px' }}>Our Latest Tips</h1>
           ) : (
-            <h1 style={{ textAlign: 'center', fontWeight: 'bold', fontSize: '34px' }}>No Tips yet</h1>
+            <h1 style={{ textAlign: 'center', fontSize: '35px' }}>No Tips yet</h1>
           )}
         </div>
         <div className="page-wrapper" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '20px' }}>
