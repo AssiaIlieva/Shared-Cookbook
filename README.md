@@ -7,6 +7,7 @@
 - [Shared Cook-book](#shared-cook-book)
   - [📋 Table of Contents](#-table-of-contents)
   - [📖 Overview](#-overview)
+  - [🛠️ Technologies Used](#️-technologies-used)
   - [🚀 Installation and Setup](#-installation-and-setup)
     - [1. Clone the Repository](#1-clone-the-repository)
     - [2. Install Dependencies](#2-install-dependencies)
@@ -24,6 +25,17 @@
 
 The application provides an engaging and interactive experience for users who are passionate about cooking and want to expand their culinary knowledge.
 
+## 🛠️ Technologies Used
+
+This project utilizes the following technologies and libraries:
+
+- **React.js**: A JavaScript library for building user interfaces.
+- **Node.js**: A JavaScript runtime for running the server-side code.
+- **SoftUni Practice Server**: Backend server used for managing data and authentication. For more details, visit the [SoftUni Practice Server GitHub repository](https://github.com/softuni-practice-server/softuni-practice-server).
+- **Vite**: A modern build tool used to set up and bundle the React client application.
+- **React Router DOM**: A library for handling routing in the React application.
+- **Free CSS Templates**: UI assets sourced from [Free CSS](https://www.free-css.com/free-css-templates/page190/html-14) for a polished design.
+
 ## 🚀 Installation and Setup
 
 To get started with **Shared Cook-book**, follow these steps:
@@ -40,8 +52,9 @@ Alternatively, you can download the project as a ZIP file from [here](https://gi
 
 ### 2. Install Dependencies
 
-```bash
 Install the dependencies for the client application:
+
+```bash
 cd client
 npm install
 ```
@@ -67,5 +80,4 @@ node server.js
 ### 4.Visit the App
 
 Open your browser and go to the following URL to access the application:
-
 http://localhost:5173/
