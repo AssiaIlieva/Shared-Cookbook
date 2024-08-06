@@ -31,4 +31,4 @@ Clone the repository to your local machine. You will need Node.js and npm instal
 https://github.com/AssiaIlieva/Shared-Cookbook
 ```
 
-Alternatively, you can download the project as a ZIP file from this link.
+Alternatively, you can download the project as a ZIP file from [here](https://github.com/AssiaIlieva/Shared-Cookbook/archive/refs/heads/main.zip).
