@@ -4,7 +4,7 @@
 
 ## 📋 Table of Contents
 
-- [Shared Cook-book](#shared-cook-book)
+- [Shared Cookbook](#shared-cookbook)
   - [📋 Table of Contents](#-table-of-contents)
   - [📖 Overview](#-overview)
   - [🛠️ Technologies Used](#️-technologies-used)
@@ -23,6 +23,7 @@
     - [📋 Recipe Details Page](#-recipe-details-page)
     - [💡 Tips Page](#-tips-page)
     - [📝 Tips Details Page](#-tips-details-page)
+  - [📜 License](#-license)
 
 ## 📖 Overview
 
@@ -148,3 +149,7 @@ Here's a screenshot of the Tips Page:
 Here's a screenshot of the Tips Details Page:
 
 ![Tips Details Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/tips-details-page.PNG)
+
+## 📜 License
+
+For information about the license, please see the [LICENSE](LICENSE.md) file.
