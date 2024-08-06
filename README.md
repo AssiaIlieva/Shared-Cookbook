@@ -129,22 +129,22 @@ Here's a screenshot of the Home Page:
 
 Here's a screenshot of the Recipes Page:
 
-![Recipes Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/recipes-page.png)
+![Recipes Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/recipes-page.PNG)
 
 ### 📋 Recipe Details Page
 
 Here's a screenshot of the Recipe Details Page:
 
-![Recipe Details Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/recipe-details-page.png)
+![Recipe Details Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/recipes-details-page.PNG)
 
 ### 💡 Tips Page
 
 Here's a screenshot of the Tips Page:
 
-![Tips Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/tips-page.png)
+![Tips Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/tips-page.PNG)
 
 ### 📝 Tips Details Page
 
 Here's a screenshot of the Tips Details Page:
 
-![Tips Details Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/tips-details-page.png)
+![Tips Details Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/tips-details-page.PNG)
