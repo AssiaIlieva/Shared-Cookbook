@@ -30,3 +30,30 @@ export function useGetAllTips() {
 
   return { tips, error, loading };
 }
+
+export function useSearchTips(tipType) {
+  const [tips, setTips] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!tipType) {
+      setTips([]);
+      return;
+    }
+    const fetchSearchedTips = async () => {
+      setLoading(true);
+      try {
+        const result = await tipsAPI.searchTips(tipType);
+        setTips(result);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchSearchedTips();
+  }, [tipType]);
+
+  return { tips, error, loading };
+}

@@ -1352,7 +1352,7 @@
         recipeName: 'Zucchini Fritters',
         recipeType: 'Appetizer',
         preparationTime: '01:00',
-        imageURL: 'https://www.savorynothings.com/wp-content/uploads/2019/07/zucchini-fritters-image-sq-500x375.jpg',
+        imageURL: 'https://www.healthygffamily.com/wp-content/uploads/2019/07/8D52E1C3-D91E-47E0-8FE7-A582A57F4D52-scaled.jpg',
         description:
           'Zucchini fritters are crispy, golden-brown patties made from grated zucchini mixed with flour, eggs, cheese, and herbs. They are pan-fried until crunchy on the outside and tender on the inside and often served with a cooling dip like yogurt or sour cream',
         ingredients:

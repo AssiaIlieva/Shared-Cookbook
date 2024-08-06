@@ -25,6 +25,12 @@ export const getLast3Tips = async () => {
   return latestTips;
 };
 
+export const searchTips = async (tipType) => {
+  const result = await requester.get(`${BASE_URL}?where=tipType%3D%22${tipType}%22`);
+  const searchTips = Object.values(result);
+  return searchTips;
+};
+
 const tipsAPI = {
   create,
   getAll,
@@ -32,6 +38,7 @@ const tipsAPI = {
   remove,
   edit,
   getLast3Tips,
+  searchTips,
 };
 
 export default tipsAPI;

@@ -50,10 +50,10 @@ export default function Recipes() {
         <div className="search-panel">
           <div className="content">
             <div className="title">
-              <h1>Search by recipe type</h1>
+              <h1>Search recipe by type</h1>
             </div>
             <div className="border"></div>
-            <h2>Search for recipes here...</h2>
+            <h2>Find recipes here...</h2>
             <div className="searchbox">
               <form onSubmit={handleSearch}>
                 <select id="recipeType" name="recipeType" className="input">
