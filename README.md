@@ -1,6 +1,6 @@
-# Shared Cook-book
+# Shared Cookbook
 
-**Shared Cook-book** is a personal final project for the SoftUni ReactJS June 2024 course. It is a web application where users can share and explore recipes, cooking tips, and hacks.
+**Shared Cookbook** is a personal final project for the SoftUni ReactJS June 2024 course. It is a web application where users can share and explore recipes, cooking tips, and hacks.
 
 ## 📋 Table of Contents
 
