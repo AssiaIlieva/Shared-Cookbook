@@ -14,7 +14,9 @@
     - [3. Start the Application](#3-start-the-application)
       - [1. Terminal 1: Start the Client](#1-terminal-1-start-the-client)
       - [2. Terminal 2: Start the Server](#2-terminal-2-start-the-server)
-    - [4.Visit the App](#4visit-the-app)
+  - [4. 🌐 Visit the App](#4--visit-the-app)
+  - [5. 💡 Usage](#5--usage)
+    - [6. 📝 Features](#6--features)
 
 ## 📖 Overview
 
@@ -77,7 +79,34 @@ cd server
 node server.js
 ```
 
-### 4.Visit the App
+## 4. 🌐 Visit the App
 
 Open your browser and go to the following URL to access the application:
 http://localhost:5173/
+
+## 5. 💡 Usage
+
+- **Explore Recipes and Tips:** Browse through a variety of recipes and cooking tips. Non-logged-in users can explore content but have limited interactions.
+- **Search Functionality:** Search for recipes and tips by type.
+- **Share Recipes and Tips:** Registered users can contribute their own recipes and cooking tips.
+- **Interact with Content:**
+  - **For Non-Logged-In Users:** Can browse, search, but cannot like, comment, or manage content.
+  - **For Logged-In Users:**
+    - Can comment on recipes multiple times.
+    - Can like otherusers' tips once.
+    - Can comment on their own recipes.
+    - Can edit and delete their own recipes.
+    - Cannot like their own tips, but can edit or delete them.
+- **Home Page Highlights:** The home page displays the three most recently added recipes and the three most recently added cooking tips.
+
+### 6. 📝 Features
+
+- **Recipe Sharing:** Users can share their own recipes and explore others' recipes.
+- **Cooking Tips:** Browse and contribute cooking tips and hacks.
+- **Search Functionality:** Search for recipes and tips based on type.
+- **User Authentication:** Secure login and registration for users to manage their contributions.
+- **Content Management for Logged-In Users:**
+  - Comment on and manage own recipes.
+  - Edit and delete own recipes and tips.
+- **Content Viewing for Non-Logged-In Users:** Browse and search recipes and tips without account access.
+- **Home Page Preview:** View the latest three recipes and tips directly on the home page.
