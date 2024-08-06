@@ -119,4 +119,4 @@ http://localhost:5173/
 
 Here's a screenshot of the Home Page:
 
-![Home Page](https://github.com/AssiaIlieva/Shared-Cookbook/raw/main/client/public/images/home-page.png)
+![Home Page](https://github.com/AssiaIlieva/Shared-Cookbook/blob/main/client/public/images/home-page.PNG)
