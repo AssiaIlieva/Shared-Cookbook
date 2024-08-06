@@ -193,7 +193,7 @@ HEADER CLASSES
 .header-right-panel-top {
   width: 280px;
   display: flex;
-  justify-content: left; 
+  justify-content: left;
   align-items: center;
 }
 .header-right-panel p {
@@ -486,7 +486,7 @@ SIDEBAR CLASSS
   color: #978e86;
   padding-left: 10px;
 }
-.search-panel .button a {
+.search-panel .button button {
   width: 40px;
   height: 40px;
   float: right;
@@ -508,7 +508,6 @@ SIDEBAR CLASSS
   color: #50453b;
   font-weight: bold;
   font-size: 34;
-
 }
 .midpanel .border {
   border-bottom: 1px solid #dadacb;
@@ -725,7 +724,6 @@ MODAL STYLES
   margin-right: 10px;
 }
 
-
 .confirm-button {
   background-color: #cf9359;
 }
@@ -734,11 +732,11 @@ MODAL STYLES
   background-color: #a87240;
 }
 
-
 .cancel-button {
-  background-color: #d4c6b2; 
-  color: #282623; 
+  background-color: #d4c6b2;
+  color: #282623;
 }
 
 .cancel-button:hover {
-  background-color: #d3b48a; 
+  background-color: #d3b48a;
+}

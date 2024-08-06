@@ -27,6 +27,32 @@ export function useGetAllRecipes() {
 
     fetchRecipes();
   }, []);
+  return { recipes, error, loading };
+}
+
+export function useSearchRecipes(recipeType) {
+  const [recipes, setRecipes] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (!recipeType) {
+      setRecipes([]);
+      return;
+    }
+    const fetchSearchedRecipes = async () => {
+      setLoading(true);
+      try {
+        const result = await recipesAPI.searchRecipes(recipeType);
+        setRecipes(result);
+      } catch (error) {
+        setError(error.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchSearchedRecipes();
+  }, [recipeType]);
 
   return { recipes, error, loading };
 }

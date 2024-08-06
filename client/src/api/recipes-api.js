@@ -27,6 +27,12 @@ export const getLast3Recipes = async () => {
   return latestRecipes;
 };
 
+export const searchRecipes = async (recipeType) => {
+  const result = await requester.get(`${BASE_URL}?where=recipeType%3D%22${recipeType}%22`);
+  const serchedRecipes = Object.values(result);
+  return serchedRecipes;
+};
+
 const recipesAPI = {
   create,
   getAll,
@@ -34,6 +40,7 @@ const recipesAPI = {
   remove,
   edit,
   getLast3Recipes,
+  searchRecipes,
 };
 
 export default recipesAPI;
