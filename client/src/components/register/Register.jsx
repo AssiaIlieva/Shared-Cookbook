@@ -11,15 +11,15 @@ export default function Register() {
   const { openModal } = useModal();
 
   const registerHandler = async (values) => {
-    if (!values.username) {
+    if (!values.username.trim()) {
       openModal(<div>Username is required</div>);
       return;
     }
-    if (!values.email) {
+    if (!values.email.trim()) {
       openModal(<div>Email is required</div>);
       return;
     }
-    if (values.password.length < 6) {
+    if (values.password.trim().length < 6) {
       openModal(<div>Password must be at least 6 characters</div>);
       return;
     }

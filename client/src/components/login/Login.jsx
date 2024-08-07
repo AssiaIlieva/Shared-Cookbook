@@ -11,7 +11,7 @@ export default function Login() {
   const { openModal } = useModal();
 
   const loginHandler = async ({ email, password }) => {
-    if (!email || !password) {
+    if (!email.trim() || !password.trim()) {
       openModal(<div>All fields are required!</div>);
       return;
     }
