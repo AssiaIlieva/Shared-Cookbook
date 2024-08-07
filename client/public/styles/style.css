@@ -740,3 +740,38 @@ MODAL STYLES
 .cancel-button:hover {
   background-color: #d3b48a;
 }
+
+/* src/components/NotFound.css */
+.not-found {
+  text-align: center;
+  padding: 20px;
+}
+
+.not-found img {
+  max-width: 100%;
+  height: auto;
+}
+
+.not-found h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #a87240;
+}
+
+.not-found p {
+  margin-bottom: 40px;
+  font-size: 15px;
+}
+
+.not-found a {
+  text-decoration: none;
+  color: #a87240;
+  font-weight: normal;
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.not-found a:hover {
+  text-decoration: underline;
+}

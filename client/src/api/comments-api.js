@@ -1,6 +1,6 @@
 import requester from './requester';
 
-const BASE_URL = `${import.meta.env.VITE_BASE_URL}/data/comments`;
+const BASE_URL = 'http://localhost:3030/data/comments';
 
 export const getAll = async (recipeId) => {
   const query = new URLSearchParams({

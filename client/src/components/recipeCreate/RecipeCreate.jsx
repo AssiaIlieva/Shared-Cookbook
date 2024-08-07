@@ -21,29 +21,31 @@ export default function RecipeCreate() {
 
   const validate = (values) => {
     const errors = {};
-    if (!values.recipeName) {
-      errors.recipeName = 'Recipe Name is required';
+
+    if (!values.recipeName.trim()) {
+      errors.recipeName = 'Recipe Name is required or cannot contain only spaces';
     }
-    if (!values.recipeType) {
-      errors.recipeType = 'Recipe Type is required';
+    if (!values.recipeType.trim()) {
+      errors.recipeType = 'Recipe Type is required or cannot contain only spaces';
     }
-    if (!values.preparationTime) {
+    if (!values.preparationTime.trim()) {
       errors.preparationTime = 'Preparation Time is required';
     } else if (!/^\d{2}:\d{2}$/.test(values.preparationTime)) {
       errors.preparationTime = 'Preparation Time must be in HH:MM format';
     }
-    if (!values.imageURL) {
-      errors.imageURL = 'Image URL is required';
+    if (!values.imageURL.trim()) {
+      errors.imageURL = 'Image URL is required or cannot contain only spaces';
     }
-    if (!values.description) {
-      errors.description = 'Description is required';
+    if (!values.description.trim()) {
+      errors.description = 'Description is required or cannot contain only spaces';
     }
-    if (!values.ingredients) {
-      errors.ingredients = 'Ingredients are required';
+    if (!values.ingredients.trim()) {
+      errors.ingredients = 'Ingredients are required or cannot contain only spaces';
     }
-    if (!values.instructions) {
-      errors.instructions = 'Instructions are required';
+    if (!values.instructions.trim()) {
+      errors.instructions = 'Instructions are required or cannot contain only spaces';
     }
+
     return errors;
   };
 

@@ -1479,17 +1479,6 @@
       },
     },
     tips: {
-      '0a272c58-b7ea-4e09-a000-7ec988248f66': {
-        _ownerId: '35c62d76-8152-4626-8712-eeb96381bea8',
-        content: 'fdgs',
-        description: 'rfgsd',
-        heading: 'Test',
-        imageURL: '/styles/technique.png',
-        likedBy: [],
-        tipType: 'Cooking Techniques',
-        _createdOn: 1614260681375,
-        _id: '0a272c58-b7ea-4e09-a000-7ec988248f66',
-      },
       'f555385f-2d73-4ca6-8927-b5d42fcf792f': {
         _ownerId: '78d8bbbb-31fa-4208-bfd2-5360a62c0d02',
         heading: 'How to fry eggs',
@@ -1497,7 +1486,6 @@
         description: 'The best way to fry eggs - Spanish method',
         content:
           'I cook my fried eggs according to the Spanish method. You fry them in a good amount of oil and baste the whites frequently with the hot oil. It makes the egg whites puff up and crisp at the edges.',
-        likedBy: [],
         imageURL: '/images/technique.png',
         _createdOn: 1722855844808,
         _id: 'f555385f-2d73-4ca6-8927-b5d42fcf792f',
@@ -1509,7 +1497,6 @@
         description: 'Read this and you will peel an egg for seconds',
         content:
           'You probably already know that adding a dash of vinegar to egg poaching water helps coagulate the white. But did you know that adding a dash of vinegar to the water when boiling eggs helps the shell peel off more easily? Say goodbye to piles of tiny egg shell shards.',
-        likedBy: [],
         imageURL: '/images/hack.png',
         _createdOn: 1722857460368,
         _id: 'f5a169d5-8430-4c9a-ae8f-05beb07ae6a0',
@@ -1521,7 +1508,6 @@
         description: 'Save time and  supplies with this hack',
         content:
           'You can freeze wine in ice cube trays and store them in the freezer, ready to be pulled out one at a time and added to pan sauces and stews, saving you from having to open a whole bottle every time a recipe calls for some wine.\n\nSimilarly, if you make yourself a large batch of stock, freeze it in convenient portion sizes in the freezer—ice cube trays and half-pint deli containers are great for this—then transfer them to a plastic freezer bag to be pulled out and used whenever you need fresh stock.',
-        likedBy: [],
         imageURL: '/images/hack.png',
         _createdOn: 1722857757522,
         _id: 'b40df538-b0f8-479a-a91b-9792fda9bcd7',
@@ -1533,7 +1519,6 @@
         description: 'Before you begin your cooking',
         content:
           "Take time to read the entire recipe from start to finish so you know what to expect before you begin cooking. Familiarise yourself with the ingredients you'll need for the entire recipe, along with the likely measurements and cooking techniques. Not only will you get a vision of how to create the dish, but you'll also avoid being caught off-guard with any surprises or mistakes along the way.",
-        likedBy: [],
         imageURL: '/images/technique.png',
         _createdOn: 1722858056481,
         _id: '8df8e11c-b33d-430b-8352-82e1a29f11d0',

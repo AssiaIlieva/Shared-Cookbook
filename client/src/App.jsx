@@ -19,6 +19,7 @@ import TipCreate from './components/tipCreate/TipCreate';
 import Tips from './components/tips/Tips';
 import TipDetails from './components/tipDetails/TipDetails';
 import TipEdit from './components/tipEdit/TipEdit';
+import NotFound from './components/common/NotFound';
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
               <Route path="/tips/:tipId/edit" element={<TipEdit />} />
               <Route path="/logout" element={<Logout />} />
             </Route>
+            <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
         </>

@@ -18,17 +18,17 @@ export default function TipsCreate() {
 
   const validate = (values) => {
     const errors = {};
-    if (!values.heading) {
-      errors.heading = 'Heading is required';
+    if (!values.heading.trim()) {
+      errors.heading = 'Heading is required or cannot contain only spaces';
     }
-    if (!values.tipType) {
-      errors.tipType = 'Tip Type is required';
+    if (!values.tipType.trim()) {
+      errors.tipType = 'Tip Type is required or cannot contain only spaces';
     }
-    if (!values.description) {
-      errors.description = 'Description is required';
+    if (!values.description.trim()) {
+      errors.description = 'Description is required or cannot contain only spaces';
     }
-    if (!values.content) {
-      errors.content = 'Content is required';
+    if (!values.content.trim()) {
+      errors.content = 'Content is required or cannot contain only spaces';
     }
     return errors;
   };
