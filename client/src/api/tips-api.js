@@ -1,6 +1,6 @@
 import requester from './requester';
 
-const BASE_URL = 'http://localhost:3030/data/tips';
+const BASE_URL = `${import.meta.env.VITE_BASE_URL}/data/tips`;
 
 export const create = (tipData) => requester.post(BASE_URL, tipData);
 
