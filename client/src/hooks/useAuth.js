@@ -34,7 +34,7 @@ export const useLogout = () => {
   const logoutHandler = async () => {
     localLogout();
     await logout();
-    navigate('/logout');
+    navigate('/');
   };
   return logoutHandler;
 };

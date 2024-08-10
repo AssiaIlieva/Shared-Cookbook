@@ -59,7 +59,7 @@ export default function Home() {
           <h1
             style={{
               textAlign: 'center',
-              color: '#50453b;',
+              color: '#50453b',
               fontSize: '35px',
             }}>
             Welcome to the Shared Cookbook
