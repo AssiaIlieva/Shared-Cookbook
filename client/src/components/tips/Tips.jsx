@@ -42,7 +42,7 @@ export default function Tips() {
     <div className="page-wrap">
       <div>
         {allTips.length > 0 ? (
-          <h1 style={{ fontSize: '36px', marginLeft: '900px', marginTop: '40px' }}>Discover Our Tips and Master the Art of Cooking!</h1>
+          <h1 style={{ fontSize: '36px', textAlign: 'center', marginTop: '40px' }}>Discover Our Tips and Master the Art of Cooking!</h1>
         ) : (
           <h1 style={{ fontSize: '36px', textAlign: 'center', marginTop: '40px' }}>No tips are available yet</h1>
         )}
